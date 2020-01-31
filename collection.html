@@ -5,10 +5,14 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
         <script src="./js/jqeury.min.js"></script>
-        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-        <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous"> 
+         <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script> 
         <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script> 
+        <!-- s -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
         <link rel="stylesheet" href="./css/style.css">
         <link rel="stylesheet" href="./css/collection.css">
         <script src="./js/main.js"></script>
@@ -32,7 +36,7 @@
           <a class="nav-link" href="#">About</a>
         </li>
         <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="category.html" id="navbarDropdown" role="button"  aria-haspopup="true" aria-expanded="false"  >
+          <a class="nav-link" href="category.html" id="navbarDropdown" role="button"  aria-haspopup="true" aria-expanded="false"  >
             Category
           </a>
          <!--  <div class="dropdown-menu" aria-labelledby="navbarDropdown">
@@ -58,7 +62,7 @@
          
         </li>
         <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="collection.html" id="navbarDropdown" role="button" aria-haspopup="true" aria-expanded="false"  >
+            <a class="nav-link" href="collection.html" id="navbarDropdown" role="button" aria-haspopup="true" aria-expanded="false"  >
               Collection
             </a>
             <!-- <div class="dropdown-menu" aria-labelledby="navbarDropdown">
@@ -84,7 +88,7 @@
       <div class="main-coll">
         <div class="top-coll">
           <div class="coll-title">
-            <h1>Collection</h1>
+
           </div>
         </div>
       </div>
@@ -92,25 +96,131 @@
         <ul>
           <li><a class="tablink active" id="newborn"  onclick="openProducts(event,'newborn')"><span>Newbron</span></a></li>
           <li><a class="tablink" id="remembrance"  onclick="openProducts(event,'remembrance')"><span>Remembrance</span></a></li>
+          <li><a class="tablink" id="transition"  onclick="openProducts(event,'transition')"><span>Transition</span></a></li>
+          <li><a class="tablink" id="memories"  onclick="openProducts(event,'memories')"><span>Memories</span></a></li>
         </ul>
       </div>
 
       <!-- NEWBORN  -->
-      <div class="products" id="NEWBORN" style="display: flex;">
-        <div class="product">
-          <div id="product-image"><img src="./assets/ogrlica1.jpg"></div>
-          <div id="product-title"><p>Wire and needle constitute the base of each piece.</p></div>
+       <div class="products" id="NEWBORN" style="display: flex;">
+
+
+        <!-- carosuel -->
+        <div class="container"> 
+          <div id="myCarousel" class="carousel slide" data-ride="carousel" data-interval="false">
+            <!-- Indicators -->
+            <ol class="carousel-indicators">
+              <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+              <li data-target="#myCarousel" data-slide-to="1"></li>
+             <!--  <li data-target="#myCarousel" data-slide-to="2"></li> -->
+            </ol>
+        
+            <!-- Wrapper for slides -->
+            <div class="carousel-inner">
+              <div class="item active">
+                <img src="./assets/newborn/IMG_0281.JPG" alt="Los Angeles" style="width:100%;">
+              </div>
+        
+              <div class="item">
+                <img src="./assets/newborn/IMG_0297.JPG" alt="Chicago" style="width:100%;">
+              </div>
+            
+              
+            </div>
+            <div id="product-title"><p>Wire and needle constitute the base of each piece.</p></div>
+            <!-- Left and right controls -->
+            <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+              <span class="glyphicon glyphicon-chevron-left"></span>
+              <span class="sr-only">Previous</span>
+            </a>
+            <a class="right carousel-control" href="#myCarousel" data-slide="next">
+              <span class="glyphicon glyphicon-chevron-right"></span>
+              <span class="sr-only">Next</span>
+            </a>
+          </div>
         </div>
-      
-        <div class="product">
-          <div id="product-image"><img src="./assets/ogrlica2.jpg"></div>
-          <div id="product-title"><p>Each piece is unique.</p></div>
+        <!-- X carosuel X -->
+
+        <!-- carousel -->
+
+        <div class="container"> 
+          <div id="myCarousel1" class="carousel slide" data-ride="carousel" data-interval="false">
+            <!-- Indicators -->
+            <ol class="carousel-indicators">
+              <li data-target="#myCarousel1" data-slide-to="0" class="active"></li>
+              <li data-target="#myCarousel1" data-slide-to="1"></li>
+             <!--  <li data-target="#myCarousel" data-slide-to="2"></li> -->
+            </ol>
+        
+            <!-- Wrapper for slides -->
+            <div class="carousel-inner">
+              <div class="item active">
+                <img src="./assets/newborn/IMG_0478.JPG" alt="Los Angeles" style="width:100%;">
+              </div>
+        
+              <div class="item">
+                <img src="./assets/newborn/IMG_0297.JPG" alt="Chicago" style="width:100%;">
+              </div>
+            
+              
+            </div>
+            <div id="product-title"><p>Each piece is unique.</p></div>
+            <!-- Left and right controls -->
+            <a class="left carousel-control" href="#myCarousel1" data-slide="prev">
+              <span class="glyphicon glyphicon-chevron-left"></span>
+              <span class="sr-only">Previous</span>
+            </a>
+            <a class="right carousel-control" href="#myCarousel1" data-slide="next">
+              <span class="glyphicon glyphicon-chevron-right"></span>
+              <span class="sr-only">Next</span>
+            </a>
+          </div>
         </div>
-      
-        <div class="product">
-          <div id="product-image"><img src="./assets/Pozadina5.jpg"></div>
-          <div id="product-title"><p>It seems to have been used to make bracelets</p></div>
-        </div>
+
+        <!-- x carosuel x -->
+
+     
+            <!-- carousel -->
+
+            <div class="container"> 
+              <div id="myCarousel2" class="carousel slide" data-ride="carousel" data-interval="false">
+                <!-- Indicators -->
+                <ol class="carousel-indicators">
+                  <li data-target="#myCarousel2" data-slide-to="0" class="active"></li>
+                  <li data-target="#myCarousel2" data-slide-to="1"></li>
+                   <li data-target="#myCarouse2" data-slide-to="2"></li>
+                </ol>
+            
+                <!-- Wrapper for slides -->
+                <div class="carousel-inner">
+                  <div class="item active">
+                    <img src="./assets/newborn/IMG_0593.JPG" alt="Los Angeles" style="width:100%;">
+                  </div>
+            
+                  <div class="item">
+                    <img src="./assets/newborn/IMG_0603.JPG" alt="Chicago" style="width:100%;">
+                  </div>
+                
+                  <div class="item">
+                    <img src="./assets/newborn/IMG_0607.JPG" alt="Chicago" style="width:100%;">
+                  </div>
+                </div>
+                <div id="product-title"><p>Each piece is unique.</p></div>
+                <!-- Left and right controls -->
+                <a class="left carousel-control" href="#myCarousel2" data-slide="prev">
+                  <span class="glyphicon glyphicon-chevron-left"></span>
+                  <span class="sr-only">Previous</span>
+                </a>
+                <a class="right carousel-control" href="#myCarousel2" data-slide="next">
+                  <span class="glyphicon glyphicon-chevron-right"></span>
+                  <span class="sr-only">Next</span>
+                </a>
+              </div>
+            </div>
+    
+            <!-- x carosuel x -->
+
+
       
        
       </div>
@@ -119,22 +229,233 @@
 
       <!-- REMBERANCE -->
       <div class="products" id="REMEMBRANCE" style="display: none;">
-        <div class="product">
-          <div id="product-image"><img src="./assets/ogrlica5.jpg"></div>
-          <div id="product-title">
-            <p>Wire and needle constitute the base of each piece.</p></div>
-        </div>
+
+
+               <!-- carousel -->
+
+               <div class="container"> 
+                <div id="myCarousel3" class="carousel slide" data-ride="carousel" data-interval="false">
+                  <!-- Indicators -->
+                  <ol class="carousel-indicators">
+                    <li data-target="#myCarousel3" data-slide-to="0" class="active"></li>
+                    <li data-target="#myCarousel3" data-slide-to="1"></li>
+                     <li data-target="#myCarouse3" data-slide-to="2"></li>
+                  </ol>
+              
+                  <!-- Wrapper for slides -->
+                  <div class="carousel-inner">
+                    <div class="item active">
+                      <img src="./assets/remembrance/IMG_0205.JPG" alt="Los Angeles" style="width:100%;">
+                    </div>
+              
+                    <div class="item">
+                      <img src="./assets/remembrance/IMG_0201.JPG" alt="Chicago" style="width:100%;">
+                    </div>
+                  
+                    <div class="item">
+                      <img src="./assets/remembrance/IMG_0199.JPG" alt="Chicago" style="width:100%;">
+                    </div>
+                  </div>
+                  <div id="product-title">
+                    <p>Wire and needle constitute the base of each piece.</p></div>
+                </div>
+                  <!-- Left and right controls -->
+                  <a class="left carousel-control" href="#myCarousel3" data-slide="prev">
+                    <span class="glyphicon glyphicon-chevron-left"></span>
+                    <span class="sr-only">Previous</span>
+                  </a>
+                  <a class="right carousel-control" href="#myCarousel3" data-slide="next">
+                    <span class="glyphicon glyphicon-chevron-right"></span>
+                    <span class="sr-only">Next</span>
+                  </a>
+                </div>
+             
       
-        <div class="product">
-          <div id="product-image"><img src="./assets/Pozadina2.jpg"></div>
-          <div id="product-title"><p>Each piece is unique.</p></div>
-        </div>
-      
-        <div class="product">
-          <div id="product-image"> <img src="assets/ogrlica.jpg"></div>
-          <div id="product-title"><p>It seems to have been used to make bracelets</p></div>
-        </div>
-      
+              <!-- x carosuel x -->
+
+
+                 <!-- carousel -->
+
+                 <div class="container"> 
+                  <div id="myCarousel4" class="carousel slide" data-ride="carousel" data-interval="false">
+                    <!-- Indicators -->
+                    <ol class="carousel-indicators">
+                      <li data-target="#myCarousel4" data-slide-to="0" class="active"></li>
+                      <li data-target="#myCarousel4" data-slide-to="1"></li>
+                       <li data-target="#myCarouse4" data-slide-to="2"></li>
+                    </ol>
+                
+                    <!-- Wrapper for slides -->
+                    <div class="carousel-inner">
+                      <div class="item active">
+                        <img src="./assets/remembrance/IMG_0226.JPG" alt="Los Angeles" style="width:100%;">
+                      </div>
+                
+                      <div class="item">
+                        <img src="./assets/remembrance/IMG_0263.JPG" alt="Chicago" style="width:100%;">
+                      </div>
+                    
+                      <div class="item">
+                        <img src="./assets/remembrance/IMG_0269.JPG" alt="Chicago" style="width:100%;">
+                      </div>
+                    </div>
+                    <div id="product-title">
+                      <p>Wire and needle constitute the base of each piece.</p></div>
+                  </div>
+                    <!-- Left and right controls -->
+                    <a class="left carousel-control" href="#myCarousel4" data-slide="prev">
+                      <span class="glyphicon glyphicon-chevron-left"></span>
+                      <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="right carousel-control" href="#myCarousel4" data-slide="next">
+                      <span class="glyphicon glyphicon-chevron-right"></span>
+                      <span class="sr-only">Next</span>
+                    </a>
+                  </div>
+                
+        
+                <!-- x carosuel x -->
+  
+
+                
+                 <!-- carousel -->
+
+                 <div class="container"> 
+                  <div id="myCarousel5" class="carousel slide" data-ride="carousel" data-interval="false">
+                    <!-- Indicators -->
+                    <ol class="carousel-indicators">
+                      <li data-target="#myCarousel5" data-slide-to="0" class="active"></li>
+                      <li data-target="#myCarousel5" data-slide-to="1"></li>
+                       <li data-target="#myCarouse5" data-slide-to="2"></li>
+                    </ol>
+                
+                    <!-- Wrapper for slides -->
+                    <div class="carousel-inner">
+                      <div class="item active">
+                        <img src="./assets/remembrance/IMG_0393.JPG" alt="Los Angeles" style="width:100%;">
+                      </div>
+                
+                      <div class="item">
+                        <img src="./assets/remembrance/IMG_0413.JPG" alt="Chicago" style="width:100%;">
+                      </div>
+                    
+                      <div class="item">
+                        <img src="./assets/remembrance/IMG_0414.JPG" alt="Chicago" style="width:100%;">
+                      </div>
+                    </div>
+                    <div id="product-title">
+                      <p>Wire and needle constitute the base of each piece.</p></div>
+                  </div>
+                    <!-- Left and right controls -->
+                    <a class="left carousel-control" href="#myCarousel5" data-slide="prev">
+                      <span class="glyphicon glyphicon-chevron-left"></span>
+                      <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="right carousel-control" href="#myCarousel5" data-slide="next">
+                      <span class="glyphicon glyphicon-chevron-right"></span>
+                      <span class="sr-only">Next</span>
+                    </a>
+                  </div>
+                
+        
+                <!-- x carosuel x -->
+
+                
+
+                <!-- carousel -->
+
+                <div class="container"> 
+                  <div id="myCarousel6" class="carousel slide" data-ride="carousel" data-interval="false">
+                    <!-- Indicators -->
+                    <ol class="carousel-indicators">
+                      <li data-target="#myCarousel6" data-slide-to="0" class="active"></li>
+                      <li data-target="#myCarousel6" data-slide-to="1"></li>
+                       <li data-target="#myCarouse6" data-slide-to="2"></li>
+                    </ol>
+                
+                    <!-- Wrapper for slides -->
+                    <div class="carousel-inner">
+                      <div class="item active">
+                        <img src="./assets/remembrance/IMG_0435.JPG" alt="Los Angeles" style="width:100%;">
+                      </div>
+                
+                      <div class="item">
+                        <img src="./assets/remembrance/IMG_0444.JPG" alt="Chicago" style="width:100%;">
+                      </div>
+                    
+                      <div class="item">
+                        <img src="./assets/remembrance/IMG_0450.JPG" alt="Chicago" style="width:100%;">
+                      </div>
+                    </div>
+                    <div id="product-title">
+                      <p>Wire and needle constitute the base of each piece.</p></div>
+                  </div>
+                    <!-- Left and right controls -->
+                    <a class="left carousel-control" href="#myCarousel6" data-slide="prev">
+                      <span class="glyphicon glyphicon-chevron-left"></span>
+                      <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="right carousel-control" href="#myCarousel6" data-slide="next">
+                      <span class="glyphicon glyphicon-chevron-right"></span>
+                      <span class="sr-only">Next</span>
+                    </a>
+                  </div>
+               
+              
+                <!-- x carosuel x -->
+
+
+                </div>
+    
+        <div class="products" id="TRANSITION" style="display: none;">
+
+              <!-- carousel -->
+
+              <div class="container"> 
+                <div id="myCarousel7" class="carousel slide" data-ride="carousel" data-interval="false">
+                  <!-- Indicators -->
+                  <ol class="carousel-indicators">
+                    <li data-target="#myCarousel7" data-slide-to="0" class="active"></li>
+                    <li data-target="#myCarousel7" data-slide-to="1"></li>
+                     <li data-target="#myCarousl7" data-slide-to="2"></li>
+                  </ol>
+              
+                  <!-- Wrapper for slides -->
+                  <div class="carousel-inner">
+                    <div class="item active">
+                      <img src="./assets/remembrance/IMG_0435.JPG" alt="Los Angeles" style="width:100%;">
+                    </div>
+              
+                    <div class="item">
+                      <img src="./assets/remembrance/IMG_0444.JPG" alt="Chicago" style="width:100%;">
+                    </div>
+                  
+                    <div class="item">
+                      <img src="./assets/remembrance/IMG_0450.JPG" alt="Chicago" style="width:100%;">
+                    </div>
+                  </div>
+                  <div id="product-title">
+                    <p>Wire and needle constitute the base of each piece.</p></div>
+                </div>
+                  <!-- Left and right controls -->
+                  <a class="left carousel-control" href="#myCarousel7" data-slide="prev">
+                    <span class="glyphicon glyphicon-chevron-left"></span>
+                    <span class="sr-only">Previous</span>
+                  </a>
+                  <a class="right carousel-control" href="#myCarousel7" data-slide="next">
+                    <span class="glyphicon glyphicon-chevron-right"></span>
+                    <span class="sr-only">Next</span>
+                  </a>
+                </div>
+             
+            
+              <!-- x carosuel x -->
+
+          </div>
+
+          <div class="products" id="MEMORIES" style="display: none;">
+          
+          </div>
         
       </div>
       <!-- X REMBERANCE -->

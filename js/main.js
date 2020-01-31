@@ -40,9 +40,9 @@ $( document ).ready(function() {
  
   // Add Active class to navbar link
      $('.nav .nav-item a').click(function(e) {
-        $('.nav .nav-item.active').removeClass('active');
+        $('.nav .nav-item.active').removeClass('active1');
         var $parent = $(this).parent();
-        $parent.addClass('active');
+        $parent.addClass('active1');
         e.preventDefault();
     }); 
 
@@ -65,10 +65,10 @@ function openProducts(evt ,products) {
   }
   tablinks = document.getElementsByClassName("tablink");
   for (i = 0; i < x.length; i++) {
-    tablinks[i].className = tablinks[i].className.replace(" active", "");
+    tablinks[i].className = tablinks[i].className.replace(" active1", "");
   }
   document.getElementById(products.toUpperCase()).style.display = "flex";
-  evt.currentTarget.className += " active";
+  evt.currentTarget.className += " active1";
 }
 
 
@@ -80,13 +80,28 @@ function openProducts1(products) {
   }
   tablinks = document.getElementsByClassName("tablink");
   for (i = 0; i < x.length; i++) {
-    tablinks[i].className = tablinks[i].className.replace(" active", "");
+    tablinks[i].className = tablinks[i].className.replace(" active1", "");
   }
   document.getElementById(products.toUpperCase()).style.display = "flex";
-  document.getElementById(localStorage.getItem("val").toLowerCase()).className += " active";
+  document.getElementById(localStorage.getItem("val").toLowerCase()).className += " active1";
 }
 
 
 $(document).on('click', ' .dropdown-menu', function (e) {
     e.stopPropagation();
   });
+
+  $('#myCarousel').carousel({
+    interval: false
+});
+
+  // Carousel
+
+ /*  var track = document.querySelector(".carousel-track");
+  var slides = Array.from(track.children);
+  var nextButton = document.querySelector('.carousel-button--right');
+  var prevButton = document.querySelector('.carousel-button--left');
+
+  var slideWidth = slides[0].getBoundingClientRect().width;
+  slides[0].style.left = 0;
+  slides[1].style.left = 200; */

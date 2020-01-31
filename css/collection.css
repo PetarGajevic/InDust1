@@ -1,14 +1,16 @@
 .top-coll{
-    background-image: url('../assets/viking-kniting.jpg');
     background-position: center;
     background-size: cover;
-    height: 600px;
 }
 
 .coll-title{
     text-align: center;
     position: relative;
     top: 50%;
+}
+
+.coll-wrap{
+    margin-top: 50px;
 }
 
 .coll-wrap ul{
@@ -43,11 +45,16 @@
 #product-image{
 height: 400px;
 width: 100%;
+position: relative;
 }
 
 #product-image img{
-    height: inherit;
+    height: 100%;
     width: 100%;
+}
+
+#product-image ul{
+    margin: 0;
 }
 
 .product:hover{
@@ -60,13 +67,43 @@ width: 100%;
     border: 1px solid #fff
 }
 
-.active {
+.active1 {
     color: #996F00!important;
     border-bottom: 1px solid #996F00;
-}
+} 
 .tablink:hover{
     cursor: pointer;
 }
+
+.container{
+    width: 30%;
+    height: 400px;
+    margin: 100px 10px;
+    padding: 0;
+    position: relative;
+}
+
+.carousel{
+    height: 100%;
+
+}
+
+.carousel-inner{
+    height: 100%;
+}
+
+.item{
+    height: 100%;
+}
+
+.item img{
+    height: 100%!important;
+}
+
+.navbar-collapse.collapse {
+    display: flex!important;
+}
+
 
 
 @media (max-width:600px){

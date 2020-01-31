@@ -16,10 +16,8 @@ span{
 }
 
 .top-cat{
-    height: 500px;
-    background-image: url('../assets/ogrlica.jpg');
      background-position: center; 
- background-size: contain; 
+     background-size: contain; 
 }
 
 .cat-title{

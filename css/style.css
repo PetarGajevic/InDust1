@@ -1,0 +1,551 @@
+.navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255,255,255, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+}
+
+/* ::-webkit-scrollbar {
+    display: none;
+    } */
+
+ html, body{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    
+}
+
+.navbar-brand{
+ 
+    width: 121px;
+    height: 40px;
+    background-size: 100px;
+}
+
+li{
+    list-style-type: none;
+}
+
+.mr-auto{
+    margin-left: auto!important;
+    margin-right: 0!important;
+}
+
+ul{
+    padding: 0;
+}
+
+h2{
+    font-family: 'Parisienne', cursive;
+}
+
+#jew-category ul{
+    padding-left: 40px;
+}
+
+#jew-collections ul{
+    padding-left: 40px;
+}
+
+
+
+@keyframes animatetop {
+    from {top:-300px; opacity:0}
+    to {top:0; opacity:1}
+  }
+
+.dropdown-menu{
+    left: -30px;
+    width: 100px;
+    height: auto;
+}
+
+#jews-wrap{
+    
+     display: none; 
+    flex-direction: row;
+}
+#jews-wrap1{
+    
+     display: none; 
+    flex-direction: row;
+}
+
+#jew-dev{
+    display: flex;
+    flex-direction: row;
+}
+
+#jews-wrap img{
+    height: 100px;
+    width: 100px;
+    margin-right: 40px; 
+}
+#jews-wrap1 img{
+    height: 100px;
+    width: 100px;
+    margin-right: 40px; 
+}
+
+.navbar{
+    padding: 0.5rem 3rem;
+}
+
+.active a{
+    color: #996F00!important;
+
+}
+
+
+/* Top page */
+
+.top{
+overflow-x: hidden;
+background-image: url('../assets/Pozadina1.jpg');
+height: 650px;
+background-position: center;
+background-size: cover;
+}
+
+.top-text h2{
+    font-family: 'Frank Ruhl Libre', serif;
+    
+}
+
+.top picture{
+    display: block;
+}
+
+.top-text{
+    position: relative;
+    top: 50%;
+    width: 100%;
+    text-align: center;
+    color: #fff;
+}
+
+.top-text h2{
+    margin-bottom: 30px;
+}
+
+.btn-default{
+    color: #996F00!important;
+    background-color: #fff;
+    font-size: 15px;
+   padding: 10px 20px 10px 20px;
+   margin-top: 30px;
+   border: 2px solid #d7dce5;
+   letter-spacing: 2px;
+   border-radius: 10px;
+}
+
+.btn-default a{
+    text-decoration: none;
+    color: #996F00;
+}
+
+.btn-default:hover{
+    cursor: pointer;
+    border: 2px solid #996F00;
+}
+
+.myrow{
+    display: flex;
+    flex-direction: row;
+}
+
+.myrow1{
+    display: flex;
+    flex-direction: row;
+}
+
+
+/*  X Top page  X */
+
+/* About */
+
+.flex-about{
+    display: flex;
+    flex-direction: row;
+    height: 530px;
+}
+.flex-about-1{
+    width: 50%;
+   display: flex; 
+}
+.flex-about-1 img{
+    max-width: 100%;
+    height: 100%;
+}
+.flex-about-2{
+    width: 50%;
+    display: flex; 
+}
+
+.flex-about-2-text{
+    padding: 100px 30px;
+    text-align: center;
+}
+.flex-about-2-text h2{
+    padding-bottom: 40px;
+}
+.flex-about-2-text p{
+    margin: 0;
+}
+
+#wid img{
+    width: 100%;
+    height: 500px;
+}
+
+.mycol-6{
+    padding: 0;
+    width: 50%;
+    height: 500px;
+}
+
+.mycol-6 img{
+    max-width: 100%;
+    height: 510px;
+}
+
+
+
+/*  */
+
+.main-about{
+    /* height: 700px; */
+}
+
+.about-image{
+    background-image: url('../assets/Pozadina2.jpg');
+    height: 500px;
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-size: cover;
+}
+
+.about-text{
+    width: 50%;
+    text-align: center;
+    padding-top: 125px;
+    color: white;
+    margin-left: 50%;
+}
+
+.about-text p{
+    width: 50%;
+    margin: auto;
+    margin-top: 30px;
+    margin-bottom: 30px;
+} 
+.image-bellow{
+    background-image: url('../assets/resiezfixedogrlica.jpg');
+    background-size: 40% 100%;
+    background-position: right;
+    background-attachment: fixed;
+    width: 60%;
+    height: 300px;
+    margin: auto;
+    position: relative;
+}
+
+.viking-kniting{
+/* background-image: url("../assets/viking-kniting.jpg"); */
+height: auto;
+background-position: bottom;
+
+background-image: linear-gradient(to right top /* #faa7e4, #f395e5, #e983e9, #dc72ee, #cb63f4 */); 
+
+}
+
+.viking-text{
+    width: 35%;
+    text-align: center;
+    padding-top: 200px;
+    margin: auto;
+    margin-bottom: 100px;
+}
+
+.viking-text h2{
+    padding-bottom: 30px;
+    color: #996F00;
+}
+
+/* X About X */
+
+/* Category */
+
+.main-cat h2{
+    text-align: center;
+    margin-top: 50px;
+}
+
+.box-wraper{
+display: flex;
+flex-direction: row;
+margin-top: 50px;
+justify-content: space-around;
+-webkit-justify-content: space-evenly !important;
+margin-bottom: 100px;
+}
+
+.myBox{
+    display: flex;
+    width: 30%;
+    height: 400px;
+    position: relative;
+}
+
+.myBox-image{
+    width: 100%;
+    height: 400px;
+}
+
+.myBox-image img{
+    width: 100%;
+    display: block;
+    height: inherit;
+}
+
+.overlay {
+    position: absolute;
+    bottom: 100%;
+    left: 0;
+    right: 0;
+     background-color: rgba(128, 128, 128, 0.555);
+     backdrop-filter: blur(3px);
+    -webkit-backdrop-filter: blur(3px);
+    overflow: hidden;
+    width: 100%;
+    height:0;
+    transition: .5s ease;
+  }
+  
+  .myBox-image:hover  .overlay {
+    bottom: 0;
+    height: 100%;
+  }
+ 
+  .text {
+    color: white;
+    font-size: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+  }
+
+.myBox-image1{
+    width: 100%;
+    height: 400px;
+}
+
+.myBox-image1 img{
+    width: 100%;
+    display: block;
+    height: inherit;
+}
+
+.overlay1 {
+    position: absolute;
+    bottom: 100%;
+    left: 0;
+    right: 0;
+     background-color: rgba(128, 128, 128, 0.555);
+     backdrop-filter: blur(3px);
+    -webkit-backdrop-filter: blur(3px);
+    overflow: hidden;
+    width: 100%;
+    height:0;
+    transition: .5s ease;
+  }
+  
+  .myBox-image1:hover  .overlay1 {
+    bottom: 0;
+    height: 100%;
+  }
+ 
+  .text1 {
+    color: white;
+    font-size: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+  }
+
+.myBox-image2{
+    width: 100%;
+    height: 400px;
+
+}
+.myBox-image2 img{
+    width: 100%;
+    display: block;
+    height: inherit;
+}
+
+.overlay2 {
+    position: absolute;
+    bottom: 100%;
+    left: 0;
+    right: 0;
+     background-color: rgba(128, 128, 128, 0.555);
+     backdrop-filter: blur(3px);
+    -webkit-backdrop-filter: blur(3px);
+    overflow: hidden;
+    width: 100%;
+    height:0;
+    transition: .5s ease;
+  }
+  
+  .myBox-image2:hover  .overlay2 {
+    bottom: 0;
+    height: 100%;
+  }
+ 
+  .text2 {
+    color: white;
+    font-size: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+  }
+
+/* X Category X */
+
+/* Footer */
+
+.footer{
+    height: 400px;
+}
+.footer-empty{
+    height: 30px;
+    background-color: #DDD;
+}
+
+.footer-title{
+    text-align: center;
+    padding-top: 40px;
+    width: 80%;
+    margin: auto;
+    border-bottom: 1px solid gray;
+    padding-bottom: 30px;
+}
+
+.footer-links{
+    text-align: center;
+    width: 80%;
+    margin: auto;
+    padding-top: 30px;
+    border-bottom: 1px solid gray;
+    padding-bottom: 30px;
+}
+
+.footer-links ul{
+    list-style-type: none;
+}
+
+.footer-links ul li{
+    display: inline-block;
+    margin: 20px 30px;
+}
+
+.footer-info{
+    text-align: center;
+    padding-top: 20px;
+}
+
+/* X Footer X */
+
+@media (max-width:1000px){
+    .about-image{
+        background-image: none;
+    }
+    .image-bellow{
+        width: 100%;
+        background-size: 100% 100%;
+    }
+    .viking-kniting{
+        height: auto;
+        background-position: left;
+
+    }
+    .viking-text{
+        width: 80%;
+    }
+    .about-text{
+        color: black;
+        width: 80%;
+        margin: auto;
+        padding-top: 20px;
+    }
+    .about-text p {
+    width: 100%;
+    }
+
+}
+
+@media (max-width:600px){
+    .myrow{
+        flex-direction: column-reverse;
+    }
+    .myrow1{
+        flex-direction: column;
+    }
+    .mycol-6{
+        width: 100%;
+        text-align: center;
+    }
+    .box-wraper{
+        flex-direction: column;
+        margin-bottom: 30px;
+    }
+    .myBox{
+        width: 80%;
+        margin: auto;
+        margin-bottom: 60px;
+    }
+    .top{
+        background-position: inherit!important;
+    }
+   _/* .about-text{
+        color: black;
+        width: 80%;
+        margin: auto;
+    }
+    .about-text p {
+    width: 100%;
+    }
+     .about-image{
+        background-image: none;
+    }
+    .image-bellow{
+        width: 100%;
+    }
+    .viking-kniting{
+        height: auto;
+        background-position: left;
+
+    }
+    .viking-text{
+        width: 80%;
+    } */
+    .footer-links ul{
+        padding: 0;
+    }
+    .footer-links ul li {
+        display: inline;
+        margin: 0;
+        padding: 0 15px;
+    }
+}

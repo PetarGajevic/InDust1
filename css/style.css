@@ -14,11 +14,12 @@
 }
 
 .navbar-brand{
- 
     width: 121px;
     height: 40px;
     background-size: 100px;
 }
+
+
 
 li{
     list-style-type: none;
@@ -29,12 +30,21 @@ li{
     margin-right: 0!important;
 }
 
+.mr-auto li{
+    margin-left: 50px;
+}
+
 ul{
     padding: 0;
 }
 
 h2{
-    font-family: 'Parisienne', cursive;
+    font-family: "BigCaslon-Medium", "Didot W01 Roman", "Times New Roman", Times, Georgia, serif;
+    color: #996F00;
+}
+
+.nav-link{
+    font-size: 14px;
 }
 
 #jew-category ul{
@@ -94,12 +104,21 @@ h2{
 
 }
 
+.active{
+    color: #996F00!important;
+    border-bottom: 1px solid #996F00;
+}
+
+.active1{
+    color: #996F00!important;
+    border-bottom: 1px solid #996F00;
+}
 
 /* Top page */
 
 .top{
 overflow-x: hidden;
-background-image: url('../assets/Pozadina1.jpg');
+background-image: url('../assets/Cover-slika1.jpg');
 height: 650px;
 background-position: center;
 background-size: cover;
@@ -186,6 +205,7 @@ background-size: cover;
 }
 .flex-about-2-text h2{
     padding-bottom: 40px;
+    font-family: "BigCaslon-Medium", "Didot W01 Roman", "Times New Roman", Times, Georgia, serif;
 }
 .flex-about-2-text p{
     margin: 0;
@@ -193,18 +213,15 @@ background-size: cover;
 
 #wid img{
     width: 100%;
-    height: 500px;
 }
 
 .mycol-6{
     padding: 0;
     width: 50%;
-    height: 500px;
 }
 
 .mycol-6 img{
     max-width: 100%;
-    height: 510px;
 }
 
 
@@ -238,9 +255,9 @@ background-size: cover;
     margin-bottom: 30px;
 } 
 .image-bellow{
-    background-image: url('../assets/resiezfixedogrlica.jpg');
-    background-size: 40% 100%;
-    background-position: right;
+    background-image: url('../assets/About-sekcija-uspravna-slika.jpg');
+    background-size: 45% 100%;
+    background-position: left;
     background-attachment: fixed;
     width: 60%;
     height: 300px;
@@ -290,7 +307,7 @@ margin-bottom: 100px;
 
 .myBox{
     display: flex;
-    width: 30%;
+    width: 20%;
     height: 400px;
     position: relative;
 }
@@ -421,6 +438,60 @@ margin-bottom: 100px;
     text-align: center;
   }
 
+  .myBox-image3{
+    width: 100%;
+    height: 400px;
+
+}
+.myBox-image3 img{
+    width: 100%;
+    display: block;
+    height: inherit;
+}
+
+.overlay3 {
+    position: absolute;
+    bottom: 100%;
+    left: 0;
+    right: 0;
+     background-color: rgba(128, 128, 128, 0.555);
+     backdrop-filter: blur(3px);
+    -webkit-backdrop-filter: blur(3px);
+    overflow: hidden;
+    width: 100%;
+    height:0;
+    transition: .5s ease;
+  }
+  
+  .myBox-image3:hover  .overlay3 {
+    bottom: 0;
+    height: 100%;
+  }
+ 
+  .text3 {
+    color: white;
+    font-size: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+  }
+
+  .about-headline-text{
+    width: 50%;
+    margin: auto;
+    text-align: center;
+    margin-top: 60px;
+    margin-bottom: 60px;
+  }
+
+  .about-headline-text p{
+    font-size: 16px;
+  }
+
 /* X Category X */
 
 /* Footer */
@@ -455,6 +526,10 @@ margin-bottom: 100px;
     list-style-type: none;
 }
 
+.footer-links a{
+    color: black;
+}
+
 .footer-links ul li{
     display: inline-block;
     margin: 20px 30px;
@@ -465,6 +540,10 @@ margin-bottom: 100px;
     padding-top: 20px;
 }
 
+
+a:link {
+    text-decoration: none;
+  }
 /* X Footer X */
 
 @media (max-width:1000px){
@@ -493,6 +572,15 @@ margin-bottom: 100px;
     width: 100%;
     }
 
+
+
+}
+
+
+@media(min-width:992px){
+    .navbar-collapse.collapse {
+        display: flex!important;
+    } 
 }
 
 @media (max-width:600px){
@@ -516,7 +604,7 @@ margin-bottom: 100px;
         margin-bottom: 60px;
     }
     .top{
-        background-position: inherit!important;
+        background-position: 510px;
     }
    _/* .about-text{
         color: black;

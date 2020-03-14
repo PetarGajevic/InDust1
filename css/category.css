@@ -46,6 +46,8 @@ span{
     padding: 0;
 }
 
+
+
 .cat-wrapper ul li{
     list-style-type: none;
     
@@ -96,6 +98,12 @@ width: 100%;
 
 .products{
     flex-wrap: wrap;
+}
+
+@media(min-width:992px){
+    .navbar-collapse .collapse {
+        display: flex!important;
+    } 
 }
 
 @media (max-width:600px){

@@ -64,9 +64,9 @@ function openProducts(evt ,products) {
     x[i].style.display = "none";
   }
   tablinks = document.getElementsByClassName("tablink");
-  for (i = 0; i < x.length; i++) {
+   for (i = 0; i < tablinks.length; i++) {
     tablinks[i].className = tablinks[i].className.replace(" active1", "");
-  }
+  } 
   document.getElementById(products.toUpperCase()).style.display = "flex";
   evt.currentTarget.className += " active1";
 }
@@ -79,7 +79,7 @@ function openProducts1(products) {
     x[i].style.display = "none";
   }
   tablinks = document.getElementsByClassName("tablink");
-  for (i = 0; i < x.length; i++) {
+  for (i = 0; i < tablinks.length; i++) {
     tablinks[i].className = tablinks[i].className.replace(" active1", "");
   }
   document.getElementById(products.toUpperCase()).style.display = "flex";
@@ -93,6 +93,24 @@ $(document).on('click', ' .dropdown-menu', function (e) {
 
   $('#myCarousel').carousel({
     interval: false
+});
+
+$(function() {
+  $('.container').hover(function() {
+    $('').css('background-color', 'yellow');
+  }, function() {
+    // on mouseout, reset the background colour
+    $('#b').css('background-color', '');
+  });
+});
+
+
+$(document).ready(function() {
+  $("[href]").each(function() {
+      if (this.href == window.location.href) {
+          $(this).addClass("active");
+      }
+  });
 });
 
   // Carousel

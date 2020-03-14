@@ -11,10 +11,10 @@
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> 
 
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+<!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-
+ -->
 
 <link rel="stylesheet" href="./css/style.css">
 <link rel="stylesheet" href="./css/animate.css">
@@ -29,7 +29,7 @@
         <nav class="navbar navbar-expand-lg navbar-light bg-light">
           <div class="logo">
                 <a class="navbar-brand" href="index.html" >
-                  <img src="assets/Logo-INDUST-svg.svg">
+                  <img src="assets/indust-logo-black-horizontal.svg">
                 </a>
               </div>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -44,11 +44,11 @@
                     <li class="nav-item" id="About">
                       <a class="nav-link" href="#">About</a>
                     </li>
-                    <li class="nav-item dropdown">
+                  <!--  <li class="nav-item dropdown">
                       <a class="nav-link" href="category.html" id="navbarDropdown" role="button"  aria-haspopup="true" aria-expanded="false"  >
                         Category
                       </a>
-                 <!--      <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                       <div class="dropdown-menu" aria-labelledby="navbarDropdown">
                           <div id="drop-items">
                               <div id="jew-dev">
                         <div id="jews">
@@ -67,12 +67,12 @@
                         
                         
                     </div>
-                    </div> -->
+                    </div> 
                      
-                    </li>
+                    </li>-->
                     <li class="nav-item dropdown">
                         <a class="nav-link" href="collection.html" id="navbarDropdown" role="button"  aria-haspopup="true" aria-expanded="false"  >
-                          Collection
+                          Collections
                         </a>
                        <!--  <div class="dropdown-menu" aria-labelledby="navbarDropdown">
                                <div id="jew-dev">
@@ -100,15 +100,22 @@
                 <img src="./assets/Fotografija 1 - Homeslider.jpg">
               </picture> -->
                 <div class="top-text">
-                  <h2>Montenegro Handmade Jewelery </h2>
-                  <a class="btn-default">DISCOVER THE COLLECTION</a>
+                  <h2 style="color: white;">Montenegro Handmade Jewelery </h2>
+                  <a class="btn-default" href="collection.html">DISCOVER COLLECTIONS</a>
                 </div>
               </div>
             </section>
             <section class="about">
+              <div class="about-headline">
+                <div class="about-headline-text">
+                <p>Jewellry is mithology, status, friendship, sens of belonging.
+                   It is story told through time whose precious form changes while the story goes on and on.
+                   Stories buried long ago and new stories of deserted industrial halls.</p>
+                  </div>
+              </div>
               <div class="myrow">
                 <div class="mycol-6">
-                 <img class="img-responsive" src="./assets/about.jpg">
+                 <img class="img-responsive" src="./assets/Cover2---Slika2.jpg">
                 </div>
                 <div class="mycol-6">
                   <div class="flex-about-2-text">
@@ -135,27 +142,27 @@
                       </div>
                 </div>
                 <div class="mycol-6" id="wid">
-                    <img src="./assets/about1.jpg">
+                    <img src="./assets/Cover3---Slika3.jpg">
                 </div>
               </div>
             </section>
 
             <div class="main-cat"> 
-              <h2>Category</h2>
+              <h2>Collections</h2>
               <div class="box-wraper">
                 <div class="myBox">
                   <div class="myBox-image">
                     <img src="./assets/ogrlica3.jpg" class="image">
                     <div class="overlay">
-                      <a href="category.html" onclick="passValue('Bracelets')"><div class="btn-default text">Bracelets</div></a>
+                      <a href="collection.html" onclick="passValue('Newborn')"><div class="btn-default text">Newborn</div></a>
                     </div>
                   </div>
                 </div>
                 <div class="myBox">
                   <div class="myBox-image1">
-                    <img src="./assets/3.jpg" class="image">
+                    <img src="./assets/memories/IMG_0524.JPG" class="image">
                     <div class="overlay1">
-                      <a href="category.html" onclick="passValue('Necklaces')"> <div class="btn-default text1">Necklaces</div></a>
+                      <a href="collection.html" onclick="passValue('Remembrance')"> <div class="btn-default text1">Remembrance</div></a>
                     </div>
                   </div>
                 </div>
@@ -163,14 +170,23 @@
                   <div class="myBox-image2">
                     <img src="./assets/4.jpg" class="image">
                     <div class="overlay2">
-                      <a href="category.html" onclick="passValue('Rings')"><div class="btn-default text2" onclick="">Rings</div></a>
+                      <a href="collection.html" onclick="passValue('Transition')"><div class="btn-default text2" >Transition</div></a>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="myBox">
+                  <div class="myBox-image3">
+                    <img src="./assets/4.jpg" class="image">
+                    <div class="overlay3">
+                      <a href="collection.html" onclick="passValue('Memories')"><div class="btn-default text3">Memories</div></a>
                     </div>
                   </div>
                 </div>
               </div>
             </div>
 
-            <div class="main-about">
+            <div id="main-about" class="main-about">
               <div class="about-image">
                 <div class="about-text">
                   <h3>InDustart
@@ -201,13 +217,13 @@
               <div class="footer-links">
                 <ul>
                   <li>Facebook</li>
-                  <li>Instagram</li>
+                  <li><a href="https://www.instagram.com/anaan_js/" target="_blank"> Instagram</a></li>
                   <li>Twitter</li>
                 </ul>
               </div>
               <div class="footer-info">
                 <i class="fas fa-phone-alt"></i>  <p>Call us :  XXX-XXX-XXX</p>
-                <p>Email us: info@gmail.com</p>
+                <p>Email us: anajovana@gmail.com</p>
               </div>
             </div>
 </body>

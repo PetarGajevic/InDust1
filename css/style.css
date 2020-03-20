@@ -55,6 +55,10 @@ h2{
     padding-left: 40px;
 }
 
+.heading{
+    font-size: 3rem;
+}
+
 
 
 @keyframes animatetop {
@@ -118,7 +122,7 @@ h2{
 
 .top{
 overflow-x: hidden;
-background-image: url('../assets/Cover-slika1.jpg');
+background-image: url('../assets/Cover-v1.jpg');
 height: 650px;
 background-position: center;
 background-size: cover;
@@ -126,7 +130,7 @@ background-size: cover;
 
 .top-text h2{
     font-family: 'Frank Ruhl Libre', serif;
-    
+    font-size: 43px;
 }
 
 .top picture{
@@ -135,7 +139,7 @@ background-size: cover;
 
 .top-text{
     position: relative;
-    top: 50%;
+    top: 65%;
     width: 100%;
     text-align: center;
     color: #fff;
@@ -153,7 +157,6 @@ background-size: cover;
    margin-top: 30px;
    border: 2px solid #d7dce5;
    letter-spacing: 2px;
-   border-radius: 10px;
 }
 
 .btn-default a{
@@ -200,11 +203,14 @@ background-size: cover;
 }
 
 .flex-about-2-text{
-    padding: 100px 30px;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     text-align: center;
 }
 .flex-about-2-text h2{
-    padding-bottom: 40px;
+    padding-bottom: 10px;
     font-family: "BigCaslon-Medium", "Didot W01 Roman", "Times New Roman", Times, Georgia, serif;
 }
 .flex-about-2-text p{
@@ -216,6 +222,7 @@ background-size: cover;
 }
 
 .mycol-6{
+    position: relative;
     padding: 0;
     width: 50%;
 }
@@ -275,7 +282,7 @@ background-image: linear-gradient(to right top /* #faa7e4, #f395e5, #e983e9, #dc
 }
 
 .viking-text{
-    width: 35%;
+    width: 50%;
     text-align: center;
     padding-top: 200px;
     margin: auto;
@@ -308,13 +315,13 @@ margin-bottom: 100px;
 .myBox{
     display: flex;
     width: 20%;
-    height: 400px;
+   /*  height: 400px; */
     position: relative;
 }
 
 .myBox-image{
     width: 100%;
-    height: 400px;
+   /*  height: 400px; */
 }
 
 .myBox-image img{
@@ -356,7 +363,7 @@ margin-bottom: 100px;
 
 .myBox-image1{
     width: 100%;
-    height: 400px;
+    /* height: 400px; */
 }
 
 .myBox-image1 img{
@@ -398,7 +405,7 @@ margin-bottom: 100px;
 
 .myBox-image2{
     width: 100%;
-    height: 400px;
+    /* height: 400px; */
 
 }
 .myBox-image2 img{
@@ -440,7 +447,7 @@ margin-bottom: 100px;
 
   .myBox-image3{
     width: 100%;
-    height: 400px;
+    /* height: 400px; */
 
 }
 .myBox-image3 img{
@@ -513,6 +520,11 @@ margin-bottom: 100px;
     padding-bottom: 30px;
 }
 
+.footer-title img{
+    width: 121px;
+    height: 40px;
+}
+
 .footer-links{
     text-align: center;
     width: 80%;
@@ -543,6 +555,10 @@ margin-bottom: 100px;
 
 a:link {
     text-decoration: none;
+  }
+
+  #readMore{
+      color: #996F00;;
   }
 /* X Footer X */
 
@@ -576,6 +592,12 @@ a:link {
 
 }
 
+@media(min-width:1600px){
+    .heading{
+        font-size: 3.5rem;
+    }
+}
+
 
 @media(min-width:992px){
     .navbar-collapse.collapse {
@@ -583,7 +605,7 @@ a:link {
     } 
 }
 
-@media (max-width:600px){
+@media (max-width:1130px){
     .myrow{
         flex-direction: column-reverse;
     }
@@ -603,8 +625,14 @@ a:link {
         margin: auto;
         margin-bottom: 60px;
     }
-    .top{
-        background-position: 510px;
+
+    .flex-about-2-text{
+        transform: translate(-50%, -10%);
+        padding-top: 60px;
+    }
+ 
+    .paragraph{
+        margin-bottom: 30px!important;
     }
    _/* .about-text{
         color: black;
@@ -635,5 +663,12 @@ a:link {
         display: inline;
         margin: 0;
         padding: 0 15px;
+    }
+
+    @media(max-width: 600px){
+        .top{
+            background-position: 735px;
+        }
+    
     }
 }

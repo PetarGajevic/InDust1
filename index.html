@@ -4,6 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <link rel="shortcut icon" type="image/x-icon" href="./assets/Indust-logo.png" />
+    <meta property="og:image" content="http://pollex.qqriq.me/assets/Indust-logo.png" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="http://indust.qqriq.me/" />
+
     <script src="./js/jqeury.min.js"></script>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
@@ -42,13 +48,13 @@
                       <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
                     </li>
                     <li class="nav-item" id="About">
-                      <a class="nav-link" href="#">About</a>
+                      <a class="nav-link" href="about.html">About</a>
                     </li>
-                  <!--  <li class="nav-item dropdown">
+                    <li class="nav-item dropdown">
                       <a class="nav-link" href="category.html" id="navbarDropdown" role="button"  aria-haspopup="true" aria-expanded="false"  >
                         Category
                       </a>
-                       <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                      <!-- <div class="dropdown-menu" aria-labelledby="navbarDropdown">
                           <div id="drop-items">
                               <div id="jew-dev">
                         <div id="jews">
@@ -67,9 +73,9 @@
                         
                         
                     </div>
-                    </div> 
+                    </div> -->
                      
-                    </li>-->
+                    </li>
                     <li class="nav-item dropdown">
                         <a class="nav-link" href="collection.html" id="navbarDropdown" role="button"  aria-haspopup="true" aria-expanded="false"  >
                           Collections
@@ -115,16 +121,16 @@
               </div>
               <div class="myrow">
                 <div class="mycol-6">
-                 <img class="img-responsive" src="./assets/Cover2---Slika2.jpg">
+                 <img class="img-responsive" src="./assets/Cover3---Slika3.jpg">
                 </div>
                 <div class="mycol-6">
                   <div class="flex-about-2-text">
-                    <h2>  Newborn </h2>
+                    <h2 class="heading">  Newborn </h2>
 
                     <p>InDustart is modern, sophisticated jewelry brand.</p>
                      <p>  It is sculpture made from raw material to be worn </p>
                      <p> by persons who are as original, unique, urban and </p>
-                    <p> fearless as the pieces are.
+                    <p class="paragraph"> fearless as the pieces are.
                       </p>
                   </div>
                 </div>
@@ -132,27 +138,27 @@
               <div class="myrow1">
                 <div class="mycol-6">
                     <div class="flex-about-2-text">
-                        <h2> Remembrance </h2>
+                        <h2 class="heading"> Remembrance </h2>
     
                         <p>Jewelry was never just an ornament.</p>
                         <p>Jewlery is mythology, status, friendship, sense of belonging.</p>
                         <p>  Jewelry is a story told through time, </p>
-                        <p> whose precious form changes while the story goes on and on.</p>
+                        <p class="paragraph"> whose precious form changes while the story goes on and on.</p>
     
                       </div>
                 </div>
                 <div class="mycol-6" id="wid">
-                    <img src="./assets/Cover3---Slika3.jpg">
+                    <img src="./assets/Cover---Pored-Remembrance.jpg">
                 </div>
               </div>
             </section>
 
             <div class="main-cat"> 
-              <h2>Collections</h2>
+              <h2 class="heading">Collections</h2>
               <div class="box-wraper">
                 <div class="myBox">
                   <div class="myBox-image">
-                    <img src="./assets/ogrlica3.jpg" class="image">
+                    <img src="./assets/newborn/Ogrlica 3\ogrlica3.jpg" class="image">
                     <div class="overlay">
                       <a href="collection.html" onclick="passValue('Newborn')"><div class="btn-default text">Newborn</div></a>
                     </div>
@@ -160,7 +166,7 @@
                 </div>
                 <div class="myBox">
                   <div class="myBox-image1">
-                    <img src="./assets/memories/IMG_0524.JPG" class="image">
+                    <img src="./assets/remembrance/Ogrlica 1/IMG_E0534.JPG" class="image">
                     <div class="overlay1">
                       <a href="collection.html" onclick="passValue('Remembrance')"> <div class="btn-default text1">Remembrance</div></a>
                     </div>
@@ -168,7 +174,7 @@
                 </div>
                 <div class="myBox">
                   <div class="myBox-image2">
-                    <img src="./assets/4.jpg" class="image">
+                    <img src="./assets/transition/Ogrlica 1/IMG_0460.JPG" class="image">
                     <div class="overlay2">
                       <a href="collection.html" onclick="passValue('Transition')"><div class="btn-default text2" >Transition</div></a>
                     </div>
@@ -177,7 +183,7 @@
 
                 <div class="myBox">
                   <div class="myBox-image3">
-                    <img src="./assets/4.jpg" class="image">
+                    <img src="./assets/memories/Ogrlica 1/IMG_E0613.JPG" class="image">
                     <div class="overlay3">
                       <a href="collection.html" onclick="passValue('Memories')"><div class="btn-default text3">Memories</div></a>
                     </div>
@@ -201,18 +207,20 @@
             </div>
             <div class="viking-kniting">
                 <div class="viking-text">
-                  <h2>Viking Knitting</h2>
+                  <h2 class="heading">Viking Knitting</h2>
                   <p>Viking knitting is a beautiful, elegant, ancient technique also known as Trichinopoly (chain). 
                     Examples of this chain have been found in 
                     archeological sites in Scandinavia and the British Isles. Many of these date back to at least 9th 
                     and 10th centuries of Vikings times. It seems to have been used to make bracelets, trim on clothes 
                     and other decorative items and a cross-over from textiles to metalwork.</p>
+                    <a href="about.html" id="readMore">Read more...</a>
                 </div>
             </div>
             <div class="footer">
               <div class="footer-empty"></div>
               <div class="footer-title">
-                <h2>InDust</h2>
+                <img src="assets/indust-logo-black-horizontal.svg">
+                <h2>By Ana Jovanović</h2>
               </div>
               <div class="footer-links">
                 <ul>

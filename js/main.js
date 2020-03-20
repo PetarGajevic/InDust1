@@ -31,11 +31,7 @@
 } 
 
 $( document ).ready(function() {
-  // Scroll to About section
-  $('li#About').click(function(){
-    positiontherapy = $('.main-about').offset().top;
-    $('html, body').animate({scrollTop:positiontherapy}, '500', 'swing');
-  });
+ 
 
  
   // Add Active class to navbar link
@@ -91,9 +87,9 @@ $(document).on('click', ' .dropdown-menu', function (e) {
     e.stopPropagation();
   });
 
-  $('#myCarousel').carousel({
+/*   $('#myCarousel').carousel({
     interval: false
-});
+}); */
 
 $(function() {
   $('.container').hover(function() {

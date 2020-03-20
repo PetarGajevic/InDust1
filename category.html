@@ -4,6 +4,10 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
+         <link rel="shortcut icon" type="image/x-icon" href="./assets/Indust-logo.png" />
+        <meta property="og:image" content="http://pollex.qqriq.me/assets/Indust-logo.png" />
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="http://indust.qqriq.me/" />
         <script src="./js/jqeury.min.js"></script>
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
         <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
@@ -16,6 +20,7 @@
        
         <link rel="stylesheet" href="./css/style.css">
         <link rel="stylesheet" href="./css/category.css">
+        <link rel="stylesheet" href="./css/collection.css">
         <script src="./js/main.js"></script>
         <title>Document</title>
     </head>
@@ -34,13 +39,13 @@
           <a class="nav-link" href="index.html">Home </a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="index.html#main-about">About</a>
+          <a class="nav-link" href="about.html">About</a>
         </li>
-         <!--  <li class="nav-item dropdown">
+           <li class="nav-item dropdown active">
           <a class="nav-link" href="category.html" id="navbarDropdown" role="button" aria-haspopup="true" aria-expanded="false"  >
             Category
           </a>
-        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+       <!-- <div class="dropdown-menu" aria-labelledby="navbarDropdown">
               <div id="drop-items">
                   <div id="jew-dev">
             <div id="jews">
@@ -60,8 +65,8 @@
             
         </div>
         </div> 
-         
-        </li>-->
+         -->
+        </li>
         <li class="nav-item dropdown">
             <a class="nav-link" href="collection.html" id="navbarDropdown" role="button" aria-haspopup="true" aria-expanded="false"  >
               Collections
@@ -96,123 +101,1207 @@
 </div>
 <div class="cat-wrapper">
   <ul>
-    <li><a class="tablink active" id="all"  onclick="openProducts(event,'all')"><span>All</span></a></li>
+    <!-- <li><a class="tablink active" id="all"  onclick="openProducts(event,'all')"><span>All</span></a></li> -->
+    <li><a class="tablink active1" id="necklaces" onclick="openProducts(event,'necklaces')"><span>Necklaces</span></a></li>
     <li><a class="tablink" id="bracelets" onclick="openProducts(event,'bracelets')"><span>Bracelets</span></a></li>
-    <li><a class="tablink" id="necklaces" onclick="openProducts(event,'necklaces')"><span>Necklaces</span></a></li>
-    <li><a class="tablink" id="rings" onclick="openProducts(event,'rings')"><span>Rings</span></a></li>
+    <!-- <li><a class="tablink" id="rings" onclick="openProducts(event,'rings')"><span>Rings</span></a></li> -->
   </ul>
 </div>
-<div class="cat-desc">
-  <p></p>
-</div>
-<!-- All -->
-<div class="products" id="ALL" style="display: flex;">
-  <div class="product">
-    <div id="product-image"><img src="./assets/ogrlica1.jpg"></div>
-    <div id="product-title"><p>Wire and needle constitute the base of each piece.</p></div>
-  </div>
-
-  <div class="product">
-    <div id="product-image"><img src="./assets/ogrlica2.jpg"></div>
-    <div id="product-title"><p>Each piece is unique.</p></div>
-  </div>
-
-  <div class="product">
-    <div id="product-image"><img src="./assets/ogrlica.jpg"></div>
-    <div id="product-title"><p>It seems to have been used to make bracelets</p></div>
-  </div>
-
-  <div class="product">
-    <div id="product-image3"></div>
-    <div id="product-title3"></div>
-  </div>
-</div>
-  <!-- X All X -->
-
-  <!-- Bracelets -->
-  <div class="products" id="BRACELETS" style="display: none;">
-  <div class="product">
-    <div id="product-image"><img src="./assets/ogrlica6.jpg"></div>
-    <div id="product-title">
-      <p>Wire and needle constitute the base of each piece.</p></div>
-  </div>
-
-  <div class="product">
-    <div id="product-image"><img src="./assets/ogrlica1.jpg"></div>
-    <div id="product-title"><p>Each piece is unique.</p></div>
-  </div>
-
-  <div class="product">
-    <div id="product-image"> <img src="assets/ogrlica.jpg"></div>
-    <div id="product-title"><p>It seems to have been used to make bracelets</p></div>
-  </div>
-
-  <div class="product">
-    <div id="product-image"></div>
-    <div id="product-title"></div>
-  </div>
-</div>
-<!-- X Bracelets X -->
-
-<!-- Necklaces -->
-
-<div class="products" id="NECKLACES" style="display: none;">
-<div class="product">
-  <div id="product-image"><img src="./assets/ogrlica3.jpg"></div>
-  <div id="product-title">
-    <p>Wire and needle constitute the base of each piece.</p>
-  </div>
-</div>
-
-<div class="product">
-  <div id="product-image"><img src="./assets/ogrlica4.jpg"></div>
-  <div id="product-title">
-    <p>It seems to have been used to make bracelets</p>
-  </div>
-</div>
-
-<div class="product">
-  <div id="product-image"><img src="./assets/ogrlica.jpg"></div>
-  <div id="product-title">
-    <p>Each piece is unique.</p>
-  </div>
-</div>
-</div>
-
-<!-- X Necklaces X -->
 
 
-<!-- Rings -->
 
-<div class="products" id="RINGS" style="display: none;">
-  <div class="product">
-    <div id="product-image"><img src="./assets/ogrlica6.jpg"></div>
-    <div id="product-title">
-      <p></p>
-    </div>
-  </div>
+<div class="products" id="NECKLACES" style="display: flex;">
+
+
+  <!-- carosuel -->
+
+  <div class="container"> 
+    <div id="myCarousel" class="carousel slide" data-ride="carousel" data-interval="false">
+      <!-- Indicators -->
+      <ol class="carousel-indicators">
+        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+        <li data-target="#myCarousel" data-slide-to="1"></li>
+         <li data-target="#myCarousel" data-slide-to="2"></li> 
+         <li data-target="#myCarousel" data-slide-to="3"></li> 
+      </ol>
   
-  <div class="product">
-    <div id="product-image"><img src="./assets/ogrlica3.jpg"></div>
-    <div id="product-title">
-      <p></p>
-    </div>
-  </div>
+      <!-- Wrapper for slides -->
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="./assets/newborn/Ogrlica 1/1.JPG" class="img-fluid" alt="PODGORICA NAKIT OGRLICA" style="width:100%;">
+        </div>
   
-  <div class="product">
-    <div id="product-image"><img src="./assets/ogrlica1.jpg"></div>
-    <div id="product-title">
-      <p></p>
+        <div class="carousel-item">
+          <img src="./assets/newborn/Ogrlica 1/2.JPG" class="img-fluid" alt="PODGORICA NAKIT OGRLICA" style="width:100%;">
+        </div>
+      
+        <div class="carousel-item">
+          <img src="./assets/newborn/Ogrlica 1/3.JPG" class="img-fluid" alt="PODGORICA NAKIT OGRLICA" style="width:100%;">
+        </div>
+
+        <div class="carousel-item">
+          <img src="./assets/newborn/Ogrlica 1/4.jpg" class="img-fluid" alt="PODGORICA NAKIT OGRLICA" style="width:100%;">
+        </div>
+        
+      </div>
+      
+    
+      <!-- Left and right controls -->
+      <a class="carousel-control-prev" href="#myCarousel" data-slide="prev">
+        <span class="carousel-control-prev-icon"></span>
+        <span class="sr-only">Previous</span>
+      </a>
+      <a class="carousel-control-next" href="#myCarousel" data-slide="next">
+        <span class="carousel-control-next-icon"></span>
+        <span class="sr-only">Next</span>
+      </a>
     </div>
+    <figcaption class="title-class">
+    <div id="product-title"><p>Knitted galvanized iron wire connected by metal fasteners 
+      R - 0,4mm
+      Wire thickness (ø)0,32mm
+      Jewellry Care: Don t pull or stretch</p></div>
+  </figcaption>
+  <div class="pearl-separator"></div>
   </div>
 
-  <div class="product">
-    <div id="product-image"><img src="./assets/ogrlica2.jpg"></div>
-    <div id="product-title"><p>Each piece is unique.</p></div>
-  </div>
-  </div>
+  <!-- X carosuel X -->
 
-<!-- X Rings X -->
+    <!-- carousel -->
+
+    <div class="container"> 
+      <div id="myCarousel1" class="carousel slide" data-ride="carousel" data-interval="false">
+        <!-- Indicators -->
+        <ol class="carousel-indicators">
+          <li data-target="#myCarousel1" data-slide-to="0" class="active"></li>
+          <li data-target="#myCarousel1" data-slide-to="1"></li>
+           <li data-target="#myCarousel" data-slide-to="2"></li>
+           <li data-target="#myCarousel" data-slide-to="3"></li>
+           <li data-target="#myCarousel" data-slide-to="4"></li>
+           <li data-target="#myCarousel" data-slide-to="5"></li>
+           <li data-target="#myCarousel" data-slide-to="6"></li>
+           <li data-target="#myCarousel" data-slide-to="7"></li>
+        </ol>
+    
+        <!-- Wrapper for slides -->
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="./assets/newborn/Ogrlica 2/IMG_0486.JPG" class="img-fluid" alt="CRNA GORA NAKIT" style="width:100%;">
+          </div>
+    
+          <div class="carousel-item">
+            <img src="./assets/newborn/Ogrlica 2/IMG_0499.JPG" class="img-fluid" alt="CRNA GORA NAKIT" style="width:100%;">
+          </div>
+
+          <div class="carousel-item">
+            <img src="./assets/newborn/Ogrlica 2/IMG_0523.JPG" class="img-fluid" alt="CRNA GORA NAKIT" style="width:100%;">
+          </div>
+
+          <div class="carousel-item">
+            <img src="./assets/newborn/Ogrlica 2/IMG_E5994.JPG" class="img-fluid" alt="CRNA GORA NAKIT" style="width:100%;">
+          </div>
+        
+          <div class="carousel-item">
+            <img src="./assets/newborn/Ogrlica 2/5.jpg" class="img-fluid" alt="CRNA GORA NAKIT" style="width:100%;">
+          </div>
+
+          <div class="carousel-item">
+            <img src="./assets/newborn/Ogrlica 2/6.jpg" class="img-fluid" alt="CRNA GORA NAKIT" style="width:100%;">
+          </div>
+
+          <div class="carousel-item">
+            <img src="./assets/newborn/Ogrlica 2/7.jpg" class="img-fluid" alt="CRNA GORA NAKIT" style="width:100%;">
+          </div>
+
+          <div class="carousel-item">
+            <img src="./assets/newborn/Ogrlica 2/8.jpg" class="img-fluid" alt="CRNA GORA NAKIT" style="width:100%;">
+          </div>
+          
+        </div>
+       
+        <!-- Left and right controls -->
+        <a class="carousel-control-prev" href="#myCarousel1" data-slide="prev">
+          <span class="carousel-control-prev-icon"></span>
+          <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#myCarousel1" data-slide="next">
+          <span class="carousel-control-next-icon"></span>
+          <span class="sr-only">Next</span>
+        </a>
+      </div>
+      <figcaption class="title-class">
+        <div id="product-title"><p>Knitted galvanized iron wire connected by metal springs and fasteners.
+          R -0,8mm
+          Wire thickness - 0,38mm (ø)
+          Jewellry Care: Don t pull or stretch</p></div>
+      </figcaption>
+      <div class="pearl-separator"></div>
+    </div>
+
+    <!-- x carosuel x -->
+
+     <!-- carousel -->
+
+     <div class="container"> 
+      <div id="myCarousel2" class="carousel slide" data-ride="carousel" data-interval="false">
+        <!-- Indicators -->
+        <ol class="carousel-indicators">
+          <li data-target="#myCarousel2" data-slide-to="0" class="active"></li>
+          <li data-target="#myCarousel2" data-slide-to="1"></li>
+           <li data-target="#myCarouse2" data-slide-to="2"></li>
+           <li data-target="#myCarouse2" data-slide-to="3"></li>
+           <li data-target="#myCarouse2" data-slide-to="4"></li>
+          
+        </ol>
+    
+        <!-- Wrapper for slides -->
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="./assets/newborn/Ogrlica 3/IMG_0556.JPG" alt="MONTENEGRO OGRLICA" style="width:100%;">
+          </div>
+    
+          <div class="carousel-item">
+            <img src="./assets/newborn/Ogrlica 3/IMG_0577.JPG" alt="MONTENEGRO OGRLICA" style="width:100%;">
+          </div>
+        
+          <div class="carousel-item">
+            <img src="./assets/newborn/Ogrlica 3/Slika-5.jpg" alt="MONTENEGRO OGRLICA" style="width:100%;">
+          </div>
+
+          <div class="carousel-item">
+            <img src="./assets/newborn/Ogrlica 3/4.jpg" alt="MONTENEGRO OGRLICA" style="width:100%;">
+          </div>
+
+          
+
+          <div class="carousel-item">
+            <img src="./assets/newborn/Ogrlica 3/ogrlica3.jpg" alt="MONTENEGRO OGRLICA" style="width:100%;">
+          </div>
+        </div>
+        
+        <!-- Left and right controls -->
+        <a class="carousel-control-prev" href="#myCarousel2" data-slide="prev">
+          <span class="carousel-control-prev-icon"></span>
+          <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#myCarousel2" data-slide="next">
+          <span class="carousel-control-next-icon"></span>
+          <span class="sr-only">Next</span>
+        </a>
+      </div>
+      <figcaption class="title-class">
+        <div id="product-title"><p>Knitted galvanized iron wire connected by metal loops and fasteners.
+          R -0,5mm
+          Wire thickness - 0,38mm (ø)
+          Jewellry Care: Don t pull or stretch</p></div>
+        
+      </figcaption>
+      <div class="pearl-separator"></div>
+    </div>
+
+    <!-- x carosuel x -->
+
+
+     <!-- carousel -->
+
+     <div class="container"> 
+      <div id="myCarousel10" class="carousel slide" data-ride="carousel" data-interval="false">
+        <!-- Indicators -->
+        <ol class="carousel-indicators">
+          <li data-target="#myCarousel10" data-slide-to="0" class="active"></li>
+          <li data-target="#myCarousel10" data-slide-to="1"></li>
+           <li data-target="#myCarouse10" data-slide-to="2"></li>
+           <li data-target="#myCarouse10" data-slide-to="3"></li>
+           <li data-target="#myCarouse10" data-slide-to="4"></li>
+           <li data-target="#myCarouse10" data-slide-to="5"></li>
+           <li data-target="#myCarouse10" data-slide-to="6"></li>
+        </ol>
+    
+        <!-- Wrapper for slides -->
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="./assets/newborn/Ogrlica 4/IMG_0593.JPG" alt="NARUKVICE CRNA GORA" style="width:100%;">
+          </div>
+    
+          <div class="carousel-item">
+            <img src="./assets/newborn/Ogrlica 4/IMG_0603.JPG" alt="NARUKVICE CRNA GORA" style="width:100%;">
+          </div>
+        
+          <div class="carousel-item">
+            <img src="./assets/newborn/Ogrlica 4/IMG_0607.JPG" alt="NARUKVICE CRNA GORA" style="width:100%;">
+          </div>
+
+          <div class="carousel-item">
+            <img src="./assets/newborn/Ogrlica 4/5.jpg" alt="NARUKVICE CRNA GORA" style="width:100%;">
+          </div>
+
+          <div class="carousel-item">
+            <img src="./assets/newborn/Ogrlica 4/6.jpg" alt="NARUKVICE CRNA GORA" style="width:100%;">
+          </div>
+
+          <div class="carousel-item">
+            <img src="./assets/newborn/Ogrlica 4/7.jpg" alt="NARUKVICE CRNA GORA" style="width:100%;">
+          </div>
+
+          <div class="carousel-item">
+            <img src="./assets/newborn/Ogrlica 4/8.jpg" alt="NARUKVICE CRNA GORA" style="width:100%;">
+          </div>
+
+        </div>
+        <!-- Left and right controls -->
+        <a class="carousel-control-prev" href="#myCarousel10" data-slide="prev">
+          <span class="carousel-control-prev-icon"></span>
+          <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#myCarousel10" data-slide="next">
+          <span class="carousel-control-next-icon"></span>
+          <span class="sr-only">Next</span>
+        </a>
+      </div>
+      <figcaption class="title-class">
+        <div id="product-title"><p>Knitted galvanized iron wire connected by metal fasteners.
+          R -0,8mm
+          Wire thickness - 0,38mm (ø)
+          Jewellry Care: Don t pull or stretch</p></div>
+        <div class="pearl-separator"></div>
+      </figcaption>
+    </div>
+
+    <!-- x carosuel x -->
+
+
+     <!-- carousel -->
+
+     <div class="container"> 
+      <div id="myCarousel11" class="carousel slide" data-ride="carousel" data-interval="false">
+        <!-- Indicators -->
+        <ol class="carousel-indicators">
+          <li data-target="#myCarousel11" data-slide-to="0" class="active"></li>
+        <!--   <li data-target="#myCarousel11" data-slide-to="1"></li>
+           <li data-target="#myCarouse11" data-slide-to="2"></li> -->
+        </ol>
+    
+        <!-- Wrapper for slides -->
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="./assets/newborn/Ogrlica 5/IMG_3413.JPG" alt="PRODAJA NAKITA" style="width:100%;">
+          </div>
+    
+          
+        </div>
+        <!-- Left and right controls -->
+        <a class="carousel-control-prev" href="#myCarousel11" data-slide="prev">
+          <span class="carousel-control-prev-icon"></span>
+          <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#myCarousel11" data-slide="next">
+          <span class="carousel-control-next-icon"></span>
+          <span class="sr-only">Next</span>
+        </a>
+      </div>
+      <figcaption class="title-class">
+        <div id="product-title"><p>Knitted galvanized iron wire connected by metal loops and fasteners.
+          R -0,8mm
+          Wire thickness - 0,38mm (ø)
+          Jewellry Care: Don t pull or stretch</p></div>
+        <div class="pearl-separator"></div>
+      </figcaption>
+    </div>
+
+    <!-- x carosuel x -->
+
+
+      <!-- carousel -->
+
+      <div class="container"> 
+        <div id="myCarousel4" class="carousel slide" data-ride="carousel" data-interval="false">
+          <!-- Indicators -->
+          <ol class="carousel-indicators">
+            <li data-target="#myCarousel4" data-slide-to="0" class="active"></li>
+            <li data-target="#myCarousel4" data-slide-to="1"></li>
+             <li data-target="#myCarouse4" data-slide-to="2"></li>
+          </ol>
+      
+          <!-- Wrapper for slides -->
+          <div class="carousel-inner">
+            <div class="carousel-item">
+              <img src="./assets/remembrance/Ogrlica 1/IMG_0524.JPG" alt="Los Angeles" style="width:100%;">
+            </div>
+      
+            <div class="carousel-item">
+              <img src="./assets/remembrance/Ogrlica 1/IMG_0530.JPG" alt="Chicago" style="width:100%;">
+            </div>
+          
+            <div class="carousel-item  active">
+              <img src="./assets/remembrance/Ogrlica 1/IMG_E0534.JPG" alt="Chicago" style="width:100%;">
+            </div>
+          </div>
+          
+        
+          <!-- Left and right controls -->
+          <a class="carousel-control-prev" href="#myCarousel4" data-slide="prev">
+            <span class="carousel-control-prev-icon"></span>
+            <span class="sr-only">Previous</span>
+          </a>
+          <a class="carousel-control-next" href="#myCarousel4" data-slide="next">
+            <span class="carousel-control-next-icon"></span>
+            <span class="sr-only">Next</span>
+          </a>
+        </div>
+        <figcaption class="title-class">
+          <div id="product-title"><p>Black and galvanized iron wire connected by metal fasteners  and loops
+            R - 0,4 mm
+            Wire thickness 0,32mm (ø)
+            Jewellry Care: Don t pull or stretch</p></div>
+          <div class="pearl-separator"></div>
+        </figcaption>
+        </div>
+      
+
+      <!-- x carosuel x -->
+
+       <!-- carousel -->
+
+       <div class="container"> 
+        <div id="myCarousel5" class="carousel slide" data-ride="carousel" data-interval="false">
+          <!-- Indicators -->
+          <ol class="carousel-indicators">
+            <li data-target="#myCarousel5" data-slide-to="0" class="active"></li>
+           <!--  <li data-target="#myCarousel5" data-slide-to="1"></li>
+             <li data-target="#myCarouse5" data-slide-to="2"></li> -->
+          </ol>
+      
+          <!-- Wrapper for slides -->
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="./assets/remembrance/Ogrlica 2/a2.jpg" alt="Los Angeles" style="width:100%;">
+            </div>
+      
+           
+          </div>
+        
+          <!-- Left and right controls -->
+          <a class="carousel-control-prev" href="#myCarousel5" data-slide="prev">
+            <span class="carousel-control-prev-icon"></span>
+            <span class="sr-only">Previous</span>
+          </a>
+          <a class="carousel-control-next" href="#myCarousel5" data-slide="next">
+            <span class="carousel-control-next-icon"></span>
+            <span class="sr-only">Next</span>
+          </a>
+        </div>
+        <figcaption class="title-class">
+          <div id="product-title"><p>Knitted black iron wire connected by metal key and wall plugs
+            R- 0,3mm
+            Wire thickness - 0,32mm (ø)
+            Jewellry Care: Don t pull or stretch</p></div>
+         
+        </figcaption>
+        <div class="pearl-separator"></div>
+        </div>
+      
+
+      <!-- x carosuel x -->
+
+        <!-- carousel -->
+
+        <div class="container"> 
+          <div id="myCarousel6" class="carousel slide" data-ride="carousel" data-interval="false">
+            <!-- Indicators -->
+            <ol class="carousel-indicators">
+              <li data-target="#myCarousel6" data-slide-to="0" class="active"></li>
+              <li data-target="#myCarousel6" data-slide-to="1"></li>
+                <li data-target="#myCarouse6" data-slide-to="2"></li>
+                <li data-target="#myCarouse6" data-slide-to="3"></li> 
+                <li data-target="#myCarouse6" data-slide-to="4"></li>  
+                <li data-target="#myCarouse6" data-slide-to="5"></li> 
+            </ol>
+        
+            <!-- Wrapper for slides -->
+            <div class="carousel-inner">
+              <div class="carousel-item ">
+                <img src="./assets/remembrance/Ogrlica 3/8.jpg" alt="INDUST MONTENEGRO" style="width:100%;">
+              </div>
+        
+               <div class="carousel-item active">
+                <img src="./assets/remembrance/Ogrlica 3/ogrlica5.jpg" alt="INDUST HANDMADE" style="width:100%;">
+              </div> 
+            
+              <div class="carousel-item">
+                <img src="./assets/remembrance/Ogrlica 3/IMG_0249.JPG" alt="INDUST PODGORICA" style="width:100%;">
+              </div>
+
+              <div class="carousel-item">
+                <img src="./assets/remembrance/Ogrlica 3/IMG_0226.JPG" alt="INDUST PRODAJA NAKITA" style="width:100%;">
+              </div>
+
+              
+              <div class="carousel-item">
+                <img src="./assets/remembrance/Ogrlica 3/IMG_0233.JPG" alt="INDUST CRNA GORA" style="width:100%;">
+              </div>
+
+              <div class="carousel-item">
+                <img src="./assets/remembrance/Ogrlica 3/a2.jpg" alt="INDUST RUCNI NAKIT" style="width:100%;">
+              </div>
+            </div>
+           
+            <!-- Left and right controls -->
+            <a class="carousel-control-prev" href="#myCarousel6" data-slide="prev">
+              <span class="carousel-control-prev-icon"></span>
+              <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#myCarousel6" data-slide="next">
+              <span class="carousel-control-next-icon"></span>
+              <span class="sr-only">Next</span>
+            </a>
+          </div>
+          <figcaption class="title-class">
+            <div id="product-title"><p>Knitted galvanized iron wire connected by metal chains, fasteners.
+              R - 0,9mm
+              Wire thickness (ø)0,40mm
+              Jewellry Care: Don t pull or stretch</p></div>
+            
+          </figcaption>
+          <div class="pearl-separator"></div>
+          </div>
+       
+      
+        <!-- x carosuel x -->
+
+
+         <!-- carousel -->
+
+         <div class="container"> 
+          <div id="myCarousel14" class="carousel slide" data-ride="carousel" data-interval="false">
+            <!-- Indicators -->
+            <ol class="carousel-indicators">
+              <li data-target="#myCarousel14" data-slide-to="0" class="active"></li>
+              <li data-target="#myCarousel14" data-slide-to="1"></li>
+               <li data-target="#myCarousel14" data-slide-to="2"></li>
+               <li data-target="#myCarousel14" data-slide-to="3"></li>
+               <li data-target="#myCarousel14" data-slide-to="4"></li>
+               <li data-target="#myCarousel14" data-slide-to="5"></li>
+               <li data-target="#myCarousel14" data-slide-to="6"></li>
+            </ol>
+        
+            <!-- Wrapper for slides -->
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="./assets/remembrance/Ogrlica 4/IMG_0199.JPG" alt="Los Angeles" style="width:100%;">
+              </div>
+        
+              <div class="carousel-item">
+                <img src="./assets/remembrance/Ogrlica 4/IMG_0201.JPG" alt="Chicago" style="width:100%;">
+              </div>
+            
+              <div class="carousel-item">
+                <img src="./assets/remembrance/Ogrlica 4/IMG_0205.JPG" alt="Chicago" style="width:100%;">
+              </div>
+
+              <div class="carousel-item">
+                <img src="./assets/remembrance/Ogrlica 4/IMG_0211.JPG" alt="Chicago" style="width:100%;">
+              </div>
+
+              <div class="carousel-item">
+                <img src="./assets/remembrance/Ogrlica 4/8.jpg" alt="Chicago" style="width:100%;">
+              </div>
+
+              <div class="carousel-item">
+                <img src="./assets/remembrance/Ogrlica 4/6.jpg" alt="Chicago" style="width:100%;">
+              </div>
+
+              <div class="carousel-item">
+                <img src="./assets/remembrance/Ogrlica 4/7.jpg" alt="Chicago" style="width:100%;">
+              </div>
+
+            </div>
+          
+            <!-- Left and right controls -->
+            <a class="carousel-control-prev" href="#myCarousel14" data-slide="prev">
+              <span class="carousel-control-prev-icon"></span>
+              <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#myCarousel14" data-slide="next">
+              <span class="carousel-control-next-icon"></span>
+              <span class="sr-only">Next</span>
+            </a>
+          </div>
+          <figcaption class="title-class">
+            <div id="product-title"><p>Knitted  galvanized iron wire connected by  metal fasteners, chain and ,,,,,.
+              R - 1,0mm
+              Wire thickness (ø)0,38mm
+              Jewellry Care: Don t pull or stretch</p></div>
+            
+          </figcaption>
+          <div class="pearl-separator"></div>
+          </div>
+       
+      
+        <!-- x carosuel x -->
+
+          <!-- carousel -->
+
+          <div class="container"> 
+            <div id="myCarousel15" class="carousel slide" data-ride="carousel" data-interval="false">
+              <!-- Indicators -->
+              <ol class="carousel-indicators">
+                <li data-target="#myCarousel15" data-slide-to="0" class="active"></li>
+                <li data-target="#myCarousel15" data-slide-to="1"></li>
+                 <li data-target="#myCarousel15" data-slide-to="2"></li>
+                 <li data-target="#myCarousel15" data-slide-to="3"></li>
+                 <li data-target="#myCarousel15" data-slide-to="4"></li>
+                 <li data-target="#myCarousel15" data-slide-to="5"></li>
+                 <li data-target="#myCarousel15" data-slide-to="6"></li>
+                 <li data-target="#myCarousel15" data-slide-to="7"></li>
+              </ol>
+          
+              <!-- Wrapper for slides -->
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img src="./assets/remembrance/Ogrlica 5/8.jpg" alt="Los Angeles" style="width:100%;">
+                </div>
+          
+                <div class="carousel-item">
+                  <img src="./assets/remembrance/Ogrlica 5/IMG_0263.JPG" alt="Chicago" style="width:100%;">
+                </div>
+              
+                <div class="carousel-item">
+                  <img src="./assets/remembrance/Ogrlica 5/IMG_0269.JPG" alt="Chicago" style="width:100%;">
+                </div>
+
+                <div class="carousel-item">
+                  <img src="./assets/remembrance/Ogrlica 5/IMG_0260.JPG" alt="Chicago" style="width:100%;">
+                </div>
+
+                <div class="carousel-item">
+                  <img src="./assets/remembrance/Ogrlica 5/4.jpg" alt="Chicago" style="width:100%;">
+                </div>
+
+                <div class="carousel-item">
+                  <img src="./assets/remembrance/Ogrlica 5/5.jpg" alt="Chicago" style="width:100%;">
+                </div>
+
+                <div class="carousel-item">
+                  <img src="./assets/remembrance/Ogrlica 5/6.jpg" alt="Chicago" style="width:100%;">
+                </div>
+
+                <div class="carousel-item">
+                  <img src="./assets/remembrance/Ogrlica 5/7.jpg" alt="Chicago" style="width:100%;">
+                </div>
+              </div>
+           
+              <!-- Left and right controls -->
+              <a class="carousel-control-prev" href="#myCarousel15" data-slide="prev">
+                <span class="carousel-control-prev-icon"></span>
+                <span class="sr-only">Previous</span>
+              </a>
+              <a class="carousel-control-next" href="#myCarousel15" data-slide="next">
+                <span class="carousel-control-next-icon"></span>
+                <span class="sr-only">Next</span>
+              </a>
+            </div>
+            <figcaption class="title-class">
+              <div id="product-title"><p>Knitted galvanized iron wire connected by metal  loops, fasteners and chains
+                R - 0,9mm
+                Wire thickness (ø)0,40mm
+                Jewellry Care: Don t pull or stretch</p></div>
+              <div class="pearl-separator"></div>
+            </figcaption>
+            </div>
+         
+        
+          <!-- x carosuel x -->
+
+
+           <!-- carousel -->
+
+           <div class="container"> 
+            <div id="myCarousel16" class="carousel slide" data-ride="carousel" data-interval="false">
+              <!-- Indicators -->
+              <ol class="carousel-indicators">
+                <li data-target="#myCarousel16" data-slide-to="0" class="active"></li>
+                <li data-target="#myCarousel16" data-slide-to="1"></li>
+                 <li data-target="#myCarousel16" data-slide-to="2"></li>
+                 <li data-target="#myCarousel16" data-slide-to="3"></li>
+                 <li data-target="#myCarousel16" data-slide-to="4"></li>
+                 <li data-target="#myCarousel16" data-slide-to="5"></li>
+                 <li data-target="#myCarousel16" data-slide-to="6"></li>
+              </ol>
+          
+              <!-- Wrapper for slides -->
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img src="./assets/remembrance/Ogrlica 6/IMG_0393.JPG" alt="Los Angeles" style="width:100%;">
+                </div>
+          
+                <div class="carousel-item">
+                  <img src="./assets/remembrance/Ogrlica 6/IMG_0413.JPG" alt="Chicago" style="width:100%;">
+                </div>
+              
+                <div class="carousel-item">
+                  <img src="./assets/remembrance/Ogrlica 6/IMG_0414.JPG" alt="Chicago" style="width:100%;">
+                </div>
+
+                <div class="carousel-item">
+                  <img src="./assets/remembrance/Ogrlica 6/ogrlica6.jpg" alt="Chicago" style="width:100%;">
+                </div>
+
+                <div class="carousel-item">
+                  <img src="./assets/remembrance/Ogrlica 6/6.jpg" alt="Chicago" style="width:100%;">
+                </div>
+
+                <div class="carousel-item">
+                  <img src="./assets/remembrance/Ogrlica 6/7.jpg" alt="Chicago" style="width:100%;">
+                </div>
+
+                <div class="carousel-item">
+                  <img src="./assets/remembrance/Ogrlica 6/8.jpg" alt="Chicago" style="width:100%;">
+                </div>
+
+              </div>
+             
+              <!-- Left and right controls -->
+              <a class="carousel-control-prev" href="#myCarousel16" data-slide="prev">
+                <span class="carousel-control-prev-icon"></span>
+                <span class="sr-only">Previous</span>
+              </a>
+              <a class="carousel-control-next" href="#myCarousel16" data-slide="next">
+                <span class="carousel-control-next-icon"></span>
+                <span class="sr-only">Next</span>
+              </a>
+            </div>
+            <figcaption class="title-class">
+              <div id="product-title"><p>Knitted galvanized iron wire connected by metal fasteners,  loops and chain.
+                R - 1,0 mm
+                Wire thickness (ø) 0,40mm
+                Jewellry Care: Don t pull or stretch</p></div>
+              
+            </figcaption>
+            <div class="pearl-separator"></div>
+            </div>
+         
+        
+          <!-- x carosuel x -->
+
+            <!-- carousel -->
+
+            <div class="container"> 
+              <div id="myCarousel17" class="carousel slide" data-ride="carousel" data-interval="false">
+                <!-- Indicators -->
+                <ol class="carousel-indicators">
+                  <li data-target="#myCarousel17" data-slide-to="0" class="active"></li>
+                  <li data-target="#myCarousel17" data-slide-to="1"></li>
+                   <li data-target="#myCarousel17" data-slide-to="2"></li>
+                   <li data-target="#myCarousel17" data-slide-to="3"></li>
+                   <li data-target="#myCarousel17" data-slide-to="4"></li>
+                </ol>
+            
+                <!-- Wrapper for slides -->
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img src="./assets/remembrance/Ogrlica 7/IMG_0422.JPG" alt="Los Angeles" style="width:100%;">
+                  </div>
+            
+                  <div class="carousel-item">
+                    <img src="./assets/remembrance/Ogrlica 7/IMG_0425.JPG" alt="Chicago" style="width:100%;">
+                  </div>
+                
+                  <div class="carousel-item">
+                    <img src="./assets/remembrance/Ogrlica 7/IMG_0429.JPG" alt="Chicago" style="width:100%;">
+                  </div>
+
+                  <div class="carousel-item">
+                    <img src="./assets/remembrance/Ogrlica 7/4.jpg" alt="Chicago" style="width:100%;">
+                  </div>
+
+                  <div class="carousel-item">
+                    <img src="./assets/remembrance/Ogrlica 7/5.jpg" alt="Chicago" style="width:100%;">
+                  </div>
+                </div>
+               
+                <!-- Left and right controls -->
+                <a class="carousel-control-prev" href="#myCarousel17" data-slide="prev">
+                  <span class="carousel-control-prev-icon"></span>
+                  <span class="sr-only">Previous</span>
+                </a>
+                <a class="carousel-control-next" href="#myCarousel17" data-slide="next">
+                  <span class="carousel-control-next-icon"></span>
+                  <span class="sr-only">Next</span>
+                </a>
+              </div>
+              <figcaption class="title-class">
+                <div id="product-title"><p>Knitted  galvanized iron wire connected by metal fasteners, chain, spring.
+                  R - 0,9mm
+                  Wire thickness - (ø) 0,38mm
+                  Jewellry Care: Don t pull or stretch</p></div>
+              </figcaption>
+              <div class="pearl-separator"></div>
+              </div>
+           
+          
+            <!-- x carosuel x -->
+
+             <!-- carousel -->
+
+             <div class="container"> 
+              <div id="myCarousel18" class="carousel slide" data-ride="carousel" data-interval="false">
+                <!-- Indicators -->
+                <ol class="carousel-indicators">
+                  <li data-target="#myCarousel18" data-slide-to="0" class="active"></li>
+                  <li data-target="#myCarousel18" data-slide-to="1"></li>
+                   <li data-target="#myCarousel18" data-slide-to="2"></li>
+                   <li data-target="#myCarousel18" data-slide-to="3"></li>
+                   <li data-target="#myCarousel18" data-slide-to="4"></li>
+                </ol>
+            
+                <!-- Wrapper for slides -->
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img src="./assets/remembrance/Ogrlica 8/IMG_0435.JPG" alt="Los Angeles" style="width:100%;">
+                  </div>
+            
+                  <div class="carousel-item">
+                    <img src="./assets/remembrance/Ogrlica 8/IMG_0444.JPG" alt="Chicago" style="width:100%;">
+                  </div>
+                
+                  <div class="carousel-item">
+                    <img src="./assets/remembrance/Ogrlica 8/IMG_0446.JPG" alt="Chicago" style="width:100%;">
+                  </div>
+
+                  <div class="carousel-item">
+                    <img src="./assets/remembrance/Ogrlica 8/IMG_0450.JPG" alt="Chicago" style="width:100%;">
+                  </div>
+
+                  <div class="carousel-item">
+                    <img src="./assets/remembrance/Ogrlica 8/5.jpg" alt="Chicago" style="width:100%;">
+                  </div>
+                </div>
+                
+                <!-- Left and right controls -->
+                <a class="carousel-control-prev" href="#myCarousel18" data-slide="prev">
+                  <span class="carousel-control-prev-icon"></span>
+                  <span class="sr-only">Previous</span>
+                </a>
+                <a class="carousel-control-next" href="#myCarousel18" data-slide="next">
+                  <span class="carousel-control-next-icon"></span>
+                  <span class="sr-only">Next</span>
+                </a>
+              </div>
+              <figcaption class="title-class">
+                <div id="product-title"><p>Knitted  galvanized iron wire connected by metal fasteners, loops, springs, chains
+                  R - 0,3mm/ 0,5mm/ 0,8mm
+                  Wire thickness(ø) 0,32mm/0,34mm/0,38mm
+                  Jewellry Care: Don t pull or stretch
+                  </p></div>
+              
+              </figcaption>
+              <div class="pearl-separator"></div>
+              </div>
+           
+          
+            <!-- x carosuel x -->
+
+
+              <!-- carousel -->
+
+              <div class="container"> 
+                <div id="myCarousel19" class="carousel slide" data-ride="carousel" data-interval="false">
+                  <!-- Indicators -->
+                  <ol class="carousel-indicators">
+                    <li data-target="#myCarousel19" data-slide-to="0" class="active"></li>
+                    <li data-target="#myCarousel19" data-slide-to="1"></li>
+                    <!--  <li data-target="#myCarousel19" data-slide-to="2"></li> -->
+                  </ol>
+              
+                  <!-- Wrapper for slides -->
+                  <div class="carousel-inner">
+                    <div class="carousel-item active">
+                      <img src="./assets/remembrance/Ogrlica 9/1-set.jpg" alt="Los Angeles" style="width:100%;">
+                    </div>
+              
+                    <div class="carousel-item">
+                      <img src="./assets/remembrance/Ogrlica 9/2-set.jpg" alt="Chicago" style="width:100%;">
+                    </div>
+                  
+                    
+                  </div>
+                 
+                  <!-- Left and right controls -->
+                  <a class="carousel-control-prev" href="#myCarousel19" data-slide="prev">
+                    <span class="carousel-control-prev-icon"></span>
+                    <span class="sr-only">Previous</span>
+                  </a>
+                  <a class="carousel-control-next" href="#myCarousel19" data-slide="next">
+                    <span class="carousel-control-next-icon"></span>
+                    <span class="sr-only">Next</span>
+                  </a>
+                </div>
+                <figcaption class="title-class">
+                  <div id="product-title"><p>Knitted  galvanized iron wire connected by metal fasteners, loops and chains
+                    R - 0,5mm
+                    Wire thickness (ø)0,38mm
+                    Jewellry Care: Don t pull or stretch</p></div>
+                 
+                </figcaption>
+                <div class="pearl-separator"></div>
+                </div>
+             
+            
+              <!-- x carosuel x -->
+
+
+               <!-- carousel -->
+
+               <div class="container"> 
+                <div id="myCarousel20" class="carousel slide" data-ride="carousel" data-interval="false">
+                  <!-- Indicators -->
+                  <ol class="carousel-indicators">
+                    <li data-target="#myCarousel20" data-slide-to="0" class="active"></li>
+                    <li data-target="#myCarousel20" data-slide-to="1"></li>
+                    <li data-target="#myCarousel19" data-slide-to="2"></li> 
+                  </ol>
+              
+                  <!-- Wrapper for slides -->
+                  <div class="carousel-inner">
+                    <div class="carousel-item active">
+                      <img src="./assets/remembrance/Ogrlica 10/1.jpg" alt="Los Angeles" style="width:100%;">
+                    </div>
+              
+                    <div class="carousel-item">
+                      <img src="./assets/remembrance/Ogrlica 10/2.jpg" alt="Chicago" style="width:100%;">
+                    </div>
+
+                    <div class="carousel-item">
+                      <img src="./assets/remembrance/Ogrlica 10/3.jpg" alt="Chicago" style="width:100%;">
+                    </div>                                          
+                  </div>   
+                  <!-- Left and right controls -->
+                  <a class="carousel-control-prev" href="#myCarousel20" data-slide="prev">
+                    <span class="carousel-control-prev-icon"></span>
+                    <span class="sr-only">Previous</span>
+                  </a>
+                  <a class="carousel-control-next" href="#myCarousel20" data-slide="next">
+                    <span class="carousel-control-next-icon"></span>
+                    <span class="sr-only">Next</span>
+                  </a>
+                </div>
+                <figcaption class="title-class">
+                  <div id="product-title"><p>Knitted black iron wire connected by metal wall plugs, chains, loops and rings.
+                    R - 0,5mm/ 0,8mm
+                    Wire thickness - (ø) 0,32mm
+                    Jewellry Care: Don t pull or stretch</p></div>
+                </figcaption>
+                <div class="pearl-separator"></div>
+                </div>
+             
+            
+              <!-- x carosuel x -->
+
+
+               <!-- carousel -->
+
+               <div class="container"> 
+                <div id="myCarousel12" class="carousel slide" data-ride="carousel" data-interval="false">
+                  <!-- Indicators -->
+                  <ol class="carousel-indicators">
+                    <li data-target="#myCarousel12" data-slide-to="0" class="active"></li>
+                    <li data-target="#myCarousel12" data-slide-to="1"></li>
+                     <li data-target="#myCarousl12" data-slide-to="2"></li>
+                     <li data-target="#myCarousl12" data-slide-to="3"></li>
+                     <li data-target="#myCarousl12" data-slide-to="4"></li>
+                  </ol>
+              
+                  <!-- Wrapper for slides -->
+                  <div class="carousel-inner">
+                    <div class="carousel-item active">
+                      <img src="./assets/transition/Ogrlica 1/IMG_0460.JPG" alt="Los Angeles" style="width:100%;">
+                    </div>
+              
+                    <div class="carousel-item">
+                      <img src="./assets/transition/Ogrlica 1/IMG_0467.JPG" alt="Chicago" style="width:100%;">
+                    </div>
+                  
+                    <div class="carousel-item">
+                      <img src="./assets/transition/Ogrlica 1/IMG_0478.JPG" alt="Chicago" style="width:100%;">
+                    </div>
+
+                    <div class="carousel-item">
+                      <img src="./assets/transition/Ogrlica 1/10-(1).jpg" alt="Chicago" style="width:100%;">
+                    </div>
+
+                    <div class="carousel-item">
+                      <img src="./assets/transition/Ogrlica 1/5.jpg" alt="Chicago" style="width:100%;">
+                    </div>
+
+
+                  </div>
+                 
+                  <!-- Left and right controls -->
+                  <a class="carousel-control-prev" href="#myCarousel12" data-slide="prev">
+                    <span class="carousel-control-prev-icon"></span>
+                    <span class="sr-only">Previous</span>
+                  </a>
+                  <a class="carousel-control-next" href="#myCarousel12" data-slide="next">
+                    <span class="carousel-control-next-icon"></span>
+                    <span class="sr-only">Next</span>
+                  </a>
+                </div>
+                <figcaption class="title-class">
+                  <div id="product-title"><p>Bronze wire connected by metal wall plugs 
+                    Wire thickness - (ø) 0,40mm
+                    Jewellry Care: Don t pull or stretch</p></div>
+                 
+                </figcaption>
+                <div class="pearl-separator"></div>
+                </div>
+             
+            
+              <!-- x carosuel x -->
+
+
+               <!-- carousel -->
+
+               <div class="container"> 
+                <div id="myCarousel13" class="carousel slide" data-ride="carousel" data-interval="false">
+                  <!-- Indicators -->
+                  <ol class="carousel-indicators">
+                    <li data-target="#myCarousel13" data-slide-to="0" class="active"></li>
+                    <li data-target="#myCarousel13" data-slide-to="1"></li>
+                     <li data-target="#myCarousl13" data-slide-to="2"></li>
+                     <li data-target="#myCarousl13" data-slide-to="3"></li>
+                     <li data-target="#myCarousl13" data-slide-to="4"></li>
+                     <li data-target="#myCarousl13" data-slide-to="5"></li>
+                  </ol>
+              
+                  <!-- Wrapper for slides -->
+                  <div class="carousel-inner">
+                    <div class="carousel-item active">
+                      <img src="./assets/transition/Ogrlica 2/P1080296.JPG" alt="Los Angeles" style="width:100%;">
+                    </div>
+              
+                    <div class="carousel-item">
+                      <img src="./assets/transition/Ogrlica 2/P1080302.JPG" alt="Chicago" style="width:100%;">
+                    </div>
+                  
+                    <div class="carousel-item">
+                      <img src="./assets/transition/Ogrlica 2/5.jpg" alt="Chicago" style="width:100%;">
+                    </div>
+
+                    <div class="carousel-item">
+                      <img src="./assets/transition/Ogrlica 2/6.jpg" alt="Chicago" style="width:100%;">
+                    </div>
+
+                    <div class="carousel-item">
+                      <img src="./assets/transition/Ogrlica 2/7.jpg" alt="Chicago" style="width:100%;">
+                    </div>
+
+                    <div class="carousel-item">
+                      <img src="./assets/transition/Ogrlica 2/9.jpg" alt="Chicago" style="width:100%;">
+                    </div>
+                  </div>
+                 
+                  <!-- Left and right controls -->
+                  <a class="carousel-control-prev" href="#myCarousel13" data-slide="prev">
+                    <span class="carousel-control-prev-icon"></span>
+                    <span class="sr-only">Previous</span>
+                  </a>
+                  <a class="carousel-control-next" href="#myCarousel13" data-slide="next">
+                    <span class="carousel-control-next-icon"></span>
+                    <span class="sr-only">Next</span>
+                  </a>
+                </div>
+                <figcaption class="title-class">
+                  <div id="product-title"><p>Copper wire connected by metal fasteners 
+                    Wire thickness (ø) 0,40mm
+                    Jewellry Care: Don t pull or stretch</p></div>
+                </figcaption>
+                <div class="pearl-separator"></div>
+                </div>
+             
+            
+              <!-- x carosuel x -->
+
+
+                 <!-- carousel -->
+
+          <div class="container"> 
+            <div id="myCarousel8" class="carousel slide" data-ride="carousel" data-interval="false">
+              <!-- Indicators -->
+              <ol class="carousel-indicators">
+                <li data-target="#myCarousel8" data-slide-to="0" class="active"></li>
+                <li data-target="#myCarousel8" data-slide-to="1"></li>
+                 <li data-target="#myCarouse8" data-slide-to="2"></li>
+                 <li data-target="#myCarouse8" data-slide-to="3"></li>
+              </ol>
+          
+              <!-- Wrapper for slides -->
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img src="./assets/memories/Ogrlica 1/IMG_0615.JPG" alt="INDUST-MEMORIES-OGRILICA1" style="width:100%;">
+                </div>
+          
+                <div class="carousel-item">
+                  <img src="./assets/memories/Ogrlica 1/6.jpg" alt="INDUST-MEMORIES-OGRILICA1" style="width:100%;">
+                </div>
+              
+                <div class="carousel-item">
+                  <img src="./assets/memories/Ogrlica 1/IMG_E0613.JPG" alt="INDUST-MEMORIES-OGRILICA1" style="width:100%;">
+                </div>
+
+                <div class="carousel-item">
+                  <img src="./assets/memories/Ogrlica 1/4.jpg" alt="INDUST-MEMORIES-OGRILICA1" style="width:100%;">
+                </div>
+              </div>
+            
+              <!-- Left and right controls -->
+              <a class="carousel-control-prev" href="#myCarousel8" data-slide="prev">
+                <span class="carousel-control-prev-icon"></span>
+                <span class="sr-only">Previous</span>
+              </a>
+              <a class="carousel-control-next" href="#myCarousel8" data-slide="next">
+                <span class="carousel-control-next-icon"></span>
+                <span class="sr-only">Next</span>
+              </a>
+            </div>
+            <figcaption class="title-class">
+              <div id="product-title"><p>Knitted galvanized iron wire connected by metal fasteners.
+                R 0,3mm
+                Wire thickness (ø)0,32mm
+                Jewellry Care: Don t pull or stretch
+                
+                </p></div>
+             
+            </figcaption>
+            <div class="pearl-separator"></div>
+            </div>
+
+            </div>
+         
+            <div class="products" id="BRACELETS" style="display: none;">
+
+               <!-- carousel -->
+
+               <div class="container" id="Gajoza"> 
+                <div id="myCarousel3" class="carousel slide" data-ride="carousel" data-interval="false">
+                  <!-- Indicators -->
+                  <ol class="carousel-indicators">
+                    <li data-target="#myCarousel3" data-slide-to="0" class="active"></li>
+                    <!-- <li data-target="#myCarousel3" data-slide-to="1"></li>
+                     <li data-target="#myCarouse3" data-slide-to="2"></li> -->
+                  </ol>
+              
+                  <!-- Wrapper for slides -->
+                  <div class="carousel-inner">
+                    <div class="carousel-item active">
+                      <img src="./assets/remembrance/Narukvica 1/3.jpg" alt="NARUKVICA PRODAJA CRNA GORA" style="width:100%;">
+                    </div>
+              
+                  
+                  </div>
+                  
+                  <!-- Left and right controls -->
+                  <a class="carousel-control-prev" href="#myCarousel3" data-slide="prev">
+                    <span class="carousel-control-prev-icon"></span>
+                    <span class="sr-only">Previous</span>
+                  </a>
+                  <a class="carousel-control-next" href="#myCarousel3" data-slide="next">
+                    <span class="carousel-control-next-icon"></span>
+                    <span class="sr-only">Next</span>
+                  </a>
+                </div>
+                  <figcaption class="title-class">
+                    <div id="product-title"><p>Knitted galvanized iron wire connected by metal fasteners.
+                      R 0,8mm
+                      Wire thickness (ø)0,38mm
+                      Jewellry Care: Don t pull or stretch</p></div>
+                  </figcaption>
+                  <div class="pearl-separator"></div>
+                </div>
+             
+      
+              <!-- x carosuel x -->
+
+
+               <!-- carousel -->
+
+               <div class="container"> 
+                <div id="myCarousel7" class="carousel slide" data-ride="carousel" data-interval="false">
+                  <!-- Indicators -->
+                  <ol class="carousel-indicators">
+                    <li data-target="#myCarousel7" data-slide-to="0" class="active"></li>
+                    <li data-target="#myCarousel7" data-slide-to="1"></li>
+                     <li data-target="#myCarousl7" data-slide-to="2"></li>
+                     <li data-target="#myCarousl7" data-slide-to="3"></li>
+                     <li data-target="#myCarousl7" data-slide-to="4"></li>
+                  </ol>
+              
+                  <!-- Wrapper for slides -->
+                  <div class="carousel-inner">
+                    <div class="carousel-item active">
+                      <img src="./assets/transition/Narukvica/P1080302.JPG" alt="Los Angeles" style="width:100%;">
+                    </div>
+                  
+                    <div class="carousel-item">
+                      <img src="./assets/transition/Narukvica/P1080309.JPG" alt="Chicago" style="width:100%;">
+                    </div>
+
+                    <div class="carousel-item">
+                      <img src="./assets/transition/Narukvica/4.jpg" alt="Chicago" style="width:100%;">
+                    </div>
+
+                    <div class="carousel-item">
+                      <img src="./assets/transition/Narukvica/5.jpg" alt="Chicago" style="width:100%;">
+                    </div>
+                    
+                    <div class="carousel-item">
+                      <img src="./assets/transition/Narukvica/Fotografije-Remembrance-Ogrlica10.jpg" alt="Chicago" style="width:100%;">
+                    </div>
+                 
+                  </div>
+                  <!-- Left and right controls -->
+                  <a class="carousel-control-prev" href="#myCarousel7" data-slide="prev">
+                    <span class="carousel-control-prev-icon"></span>
+                    <span class="sr-only">Previous</span>
+                  </a>
+                  <a class="carousel-control-next" href="#myCarousel7" data-slide="next">
+                    <span class="carousel-control-next-icon"></span>
+                    <span class="sr-only">Next</span>
+                  </a>
+                </div>
+                <figcaption class="title-class">
+                  <div id="product-title"><p>Copper wire connected by metal fasteners
+                    Wire thickness (ø) 0,40mm
+                    Jewellry Care: Don t pull or stretch                 
+                    </p></div>
+                 
+                </figcaption>
+                <div class="pearl-separator"></div>
+                </div>
+             
+            
+              <!-- x carosuel x -->
+
+              </div>
+
+              <div class="footer">
+                <div class="footer-empty"></div>
+                <div class="footer-title">
+                  <img src="assets/indust-logo-black-horizontal.svg">
+                <h2>By Ana Jovanović</h2>
+                </div>
+                <div class="footer-links">
+                  <ul>
+                    <li>Facebook</li>
+                    <li><a href="https://www.instagram.com/anaan_js/" target="_blank"> Instagram</a></li>
+                    <li>Twitter</li>
+                  </ul>
+                </div>
+                <div class="footer-info">
+                  <i class="fas fa-phone-alt"></i>  <p>Call us :  XXX-XXX-XXX</p>
+                  <p>Email us: anajovana@gmail.com</p>
+                </div>
+              </div>
+
 
 </section>
 
